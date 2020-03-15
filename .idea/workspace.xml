@@ -2,9 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd45ecdf-0304-42cd-835c-3344b20c0c5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/cookieAllowAccess/cookieAllowAccess.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/cookieAllowAccess/cookieAllowAccess.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/jquery-ui.min.css@v2.0.5.5.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/screen.css@v=5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style-2.css@v2.0.5.5.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.css@v2.0.5.5.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/PFBeauSansPro-Reg.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/PFBeauSansPro-Reg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/PFBeauSansPro-Reg.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/PFBeauSansPro-Reg.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/PFBeauSansPro-SeBold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/PFBeauSansPro-SeBold.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/PFBeauSansPro-SeBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/PFBeauSansPro-SeBold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot@" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot@v=4.7.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg@v=4.7.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf@v=4.7.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2@v=4.7.0.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff@v=4.7.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/about-us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/about.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/chevron-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/video1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/video2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/jquery3/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/custom_cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.fancybox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.form.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.mCustomScrollbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.maskedinput.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.ui.touch-punch.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/main.js@v=2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/slick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/ui-slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mf/hammer.js@v2.0.5.5.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mf/iscroll.js@v2.0.5.5.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mf/jquery-plugins.js@v2.0.5.5.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mf/jquery-ui.min.js@v2.0.5.5.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mf/livefilter.js@v2.0.5.5.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mf/mega_filter.js@v2.0.5.5.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mf/selectpicker.js@v2.0.5.5.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/site-catalog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/site-catalog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,100 +78,100 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
-      <path value="$PROJECT_DIR$/vendor/symfony/console" />
-      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
-      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
-      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
-      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
-      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
-      <path value="$PROJECT_DIR$/vendor/symfony/process" />
-      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
-      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
-      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
-      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
-      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
-      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
-      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
-      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
-      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
-      <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
-      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
-      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
-      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
-      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
-      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
-      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
-      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
-      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
-      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
-      <path value="$PROJECT_DIR$/vendor/psr/log" />
-      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
-      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
-      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
-      <path value="$PROJECT_DIR$/vendor/opis/closure" />
-      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
-      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
-      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
-      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
-      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
-      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
-      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
-      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
-      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
-      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
-      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
-      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
-      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
-      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
       <path value="$PROJECT_DIR$/vendor/laravel/framework" />
       <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
-      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
-      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
-      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
-      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
-      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -186,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584211394481</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge branch 'developer' of https://github.com/gizaaz/sire-catalog into developer&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;.idea/php.xml">
+      <created>1584282401614</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584282401614</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,17 +252,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add dot from file readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dot from file readme.md" />
+    <MESSAGE value="Merge branch 'developer' of https://github.com/gizaaz/sire-catalog into developer&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;.idea/php.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'developer' of https://github.com/gizaaz/sire-catalog into developer&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;.idea/php.xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1584281587530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584281587530" />
-    <state x="672" y="236" key="MultipleFileMergeDialog" timestamp="1584210277323">
+    <state x="672" y="236" key="MultipleFileMergeDialog" timestamp="1584282924405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="672" y="236" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584210277323" />
+    <state x="672" y="236" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584282924405" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584211401766">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -217,5 +276,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="741" y="233" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584210244252" />
+    <state x="724" y="311" key="git4idea.merge.GitMergeDialog" timestamp="1584282952355">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="724" y="311" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584282952355" />
+    <state x="752" y="384" key="git4idea.rebase.GitRebaseDialog" timestamp="1584282908460">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="384" key="git4idea.rebase.GitRebaseDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584282908460" />
   </component>
 </project>
