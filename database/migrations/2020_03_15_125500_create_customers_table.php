@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateShoppersTable extends Migration
+class CreateCustomersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateShoppersTable extends Migration
      */
     public function up()
     {
-        Schema::create('shoppers', function (Blueprint $table) {
+        Schema::create('customers', function (Blueprint $table) {
             $table->bigIncrements("user_id");
             $table->integer("product_id");
             $table->string("user_name");
@@ -30,6 +30,6 @@ class CreateShoppersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shoppers');
+        Schema::dropIfExists('customers');
     }
 }
