@@ -7,4 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     protected $primaryKey = 'categoty_id';
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
 }
