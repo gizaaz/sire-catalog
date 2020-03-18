@@ -1,62 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd45ecdf-0304-42cd-835c-3344b20c0c5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/cookieAllowAccess/cookieAllowAccess.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/cookieAllowAccess/cookieAllowAccess.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/jquery-ui.min.css@v2.0.5.5.1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/screen.css@v=5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/style-2.css@v2.0.5.5.1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/style.css@v2.0.5.5.1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/PFBeauSansPro-Reg.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/PFBeauSansPro-Reg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/PFBeauSansPro-Reg.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/PFBeauSansPro-Reg.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/PFBeauSansPro-SeBold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/PFBeauSansPro-SeBold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/PFBeauSansPro-SeBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/PFBeauSansPro-SeBold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot@" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot@v=4.7.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg@v=4.7.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf@v=4.7.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2@v=4.7.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff@v=4.7.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/about-us.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/about.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/chevron-down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/video1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/video2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/jquery3/jquery-3.2.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/custom_cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/foundation.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.fancybox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.form.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.mCustomScrollbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.maskedinput.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.ui.touch-punch.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/main.js@v=2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/slick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/ui-slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mf/hammer.js@v2.0.5.5.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mf/iscroll.js@v2.0.5.5.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mf/jquery-plugins.js@v2.0.5.5.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mf/jquery-ui.min.js@v2.0.5.5.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mf/livefilter.js@v2.0.5.5.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mf/mega_filter.js@v2.0.5.5.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mf/selectpicker.js@v2.0.5.5.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="0c6c550c-73f4-4bf3-a3ce-50070d279b85" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,17 +9,27 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="TestBranch" />
+        <entry key="$PROJECT_DIR$" value="TASK-3" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -182,6 +137,25 @@
   </component>
   <component name="ProjectId" id="1Z8AZHukWc9mo52ghQVbA93yfal" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="site-catalog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site-catalog" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -203,6 +177,18 @@
       <recent name="D:\Open Server 5.3.5\OSPanel\domains\sire-catalog" />
       <recent name="D:\Open Server 5.3.5\OSPanel\domains\sire-catalog\app\Http\Controllers" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -247,6 +233,33 @@
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="82000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -284,5 +297,65 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="384" key="git4idea.rebase.GitRebaseDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584282908460" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="e#7#38#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#23#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
