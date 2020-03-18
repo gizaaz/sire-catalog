@@ -18,4 +18,4 @@ Route::get('/about', 'AboutController@index')->name('about');
 Route::get('/contacts', 'ContactsController@index')->name('contacts');
 Route::get('/to_customers', 'ToCustomersController@index')->name('toCustomers');
 Route::get('/catalog', 'CatalogController@index')->name('catalog');
-Route::get('/products', 'ProductsController@index')->name('products');
+Route::get('/product', 'ProductsController@index')->name('product');
