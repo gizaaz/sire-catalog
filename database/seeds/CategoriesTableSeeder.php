@@ -15,7 +15,7 @@ class CategoriesTableSeeder extends Seeder
         $array = ['Міжкімнатні двері','Вхідні двері','Розсувні двері','Двері прихованого монтажа','Відкид','Фурнітура','Ворота','Ролети','Жалюзі','Плінтус','Підвіконники','Сітки','Відкоси'];
         $categories = [];
         foreach ($array as $value) {
-            $categories[] = ['categoty_name' => $value];
+            $categories[] = ['category_name' => $value];
         }
         DB::table('categories')->insert($categories);
     }

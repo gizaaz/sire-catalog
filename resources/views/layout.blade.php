@@ -181,37 +181,9 @@
                             <li><a href="{{route('catalog')}}">Каталог товарів</a>
 
                                 <ul>
-                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/">Міжкімнатні двері</a>
-
-                                    </li>
-                                    <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/">Вхідні двері</a>
-
-                                    </li>
-                                    <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/">Разсувні двері</a>
-
-                                    </li>
-                                    <li><a href="https://www.estet-doors.ru/catalog/skrytyj-korob/">Двері прихованого монтажа</a>
-                                    </li>
-                                    <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/">Вікна</a>
-
-                                    </li>
-                                    <li><a href="https://www.estet-doors.ru/catalog/furnitura/">Фурнітура</a>
-
-                                    </li>
-                                    <li><a href="https://www.estet-doors.ru/catalog/pogonazhnye-izdeliya/">Ворота</a>
-                                    </li>
-                                    <li><a href="https://www.estet-doors.ru/catalog/vidy-stekol/">Ролети</a>
-                                    </li>
-                                    <li><a href="https://www.estet-doors.ru/catalog/dekorativnoe-oformlenie/">Жалюзі</a>
-                                    </li>
-                                    <li><a href="https://www.estet-doors.ru/cvetovaya-gamma/">Плінтуси</a>
-                                    </li>
-                                    <li><a href="https://www.estet-doors.ru/cvetovaya-gamma/">Підвіконники</a>
-                                    </li>
-                                    <li><a href="https://www.estet-doors.ru/cvetovaya-gamma/">Сітки</a>
-                                    </li>
-                                    <li><a href="https://www.estet-doors.ru/cvetovaya-gamma/">Відкоси</a>
-                                    </li>
+                                    @foreach($category as $cat)
+                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/">{{$cat->category_name}}</a>
+                                    @endforeach
                                 </ul>
                             </li>
                         </ul>
