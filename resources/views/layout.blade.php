@@ -54,15 +54,6 @@
     <script src="katalog/view/theme/default/assets/js/custom.js" type="text/javascript"></script>
     <link rel="stylesheet" href="katalog/view/javascript/cookieAllowAccess/cookieAllowAccess.min.css">
     <script src="katalog/view/javascript/cookieAllowAccess/cookieAllowAccess.js" type="text/javascript" async></script>
-    <!-- Google Tag Manager -->
-    <!--  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MM4269"
-     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-     '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-     })(window,document,'script','dataLayer','GTM-MM4269');</script> -->
-    <!-- End Google Tag Manager -->
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
@@ -92,13 +83,6 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/19961386" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
-
-    <script src="//code.jivosite.com/widget.js" jv-id="jHJD4otqcy" async></script>
-    <!-- calltouch -->
-    <script src="https://mod.calltouch.ru/init.js?id=ff60914f"></script>
-    <!-- /calltouch -->
-    <meta name="yandex-verification" content="9f53b4c13c68ebee" />
-    <meta name="google-site-verification" content="VtRttz0eVig8Go0OUjqb7i11R4cXVoIF3O73WNV4nys" />
 </head>
 
 <body>
@@ -122,201 +106,21 @@
 
                             <ul>
                                 <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/">Межкомнатные двери</a>
-                                    <ul>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/v-komnatu/">Двери в комнату</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/">Коллекции дверей</a>
-                                            <ul>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/alto/">Межкомнатные двери Alto</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/era/">Межкомнатные двери Era</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/glamorous/">Межкомнатные двери Glamorous</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/mantone/">Межкомнатные двери Mantone</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/mio/">Межкомнатные двери Mio</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/perfect-volume/">Межкомнатные двери Perfect volume</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/sonata/">Межкомнатные двери Sonata</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/urban/">Межкомнатные двери Urban</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/novella/">Межкомнатные двери Novella</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/perfect/">Межкомнатные двери Perfect</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/verso/">Межкомнатные двери Verso</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/provance/">Межкомнатные двери Provance</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/royal/">Межкомнатные двери Royal</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/bliss/">Межкомнатные двери Bliss</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/ways/">Межкомнатные двери Ways</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/royal-r/">Межкомнатные двери Royal-R</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/genesis/">Межкомнатные двери Genesis</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/brussel/">Межкомнатные двери Brussel</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/mezhkomnatnye-dveri-astoria/">Межкомнатные двери Astoria</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/multistage/">Межкомнатные двери Multistage</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/janelle/">Межкомнатные двери Janelle</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/trend/">Межкомнатные двери Trend</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/elegance/">Межкомнатные двери Elegance</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/renaissance/">Межкомнатные двери Renaissance</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/zhaluziynye-dveri/">Жалюзийные двери</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/style/">Межкомнатные двери Style</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/prestige/">Межкомнатные двери Prestige</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/sirius/">Межкомнатные двери Sirius</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/baroque/">Межкомнатные двери Baroque</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/line/">Межкомнатные двери Line</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/klassicheskie/">Межкомнатные двери классика</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/haj-tek/">Межкомнатные двери хай тек</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/sovremennye/">Современные межкомнатные двери</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/stilnye/">Стильные межкомнатные двери</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-v-nalichii/">Двери в наличии</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dvustvorchatye/">Двустворчатые двери</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-po-cvetu/">Двери  по цвету</a>
-                                            <ul>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-po-cvetu/belye/">Белые двери со стеклом</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-po-cvetu/cvetnye-dveri/">Двери цветные</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-po-cvetu/venge/">Двери венге</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/">Двери для квартиры</a>
-                                            <ul>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dlya-kuhni/">Двери для кухни со стеклом</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dlya-tualeta/">Двери для туалета</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dlya-vannoj/">Двери для ванной со стеклом</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dlya-garderobnoj/">Раздвижные двери для гардеробной</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/so-steklom/">Двери со стеклом</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dveri-s-zerkalom/">Двери с зеркалом</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/gluhie/">Двери глухие</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/raspashnye/">Распашные двери</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/iz-sosny/">Двери из сосны</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/mdf/">Двери МДФ</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/pvh/">Двери ПВХ</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/ekoshpon/">Двери экошпон</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dvojnye/">Двойные двери</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dekorativnye/">Декоративные двери</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/derevyannye/">Деревянные двери</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/razdvizhnye-sistemy/">Раздвижные системы</a>
-                                        </li>
-                                    </ul>
+
                                 </li>
                                 <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/">Входные двери</a>
-                                    <ul>
-                                        <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/kollektsii-dverey/">Коллекции дверей</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/vhodnye-dveri-v-nalichii/">Двери входные в наличии</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/decor/">Отделки входных дверей</a>
-                                            <ul>
-                                                <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/decor/naruzhnaya-minimo/">Наружная отделка Minimo</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/decor/naruzhnaya-kovka/">Наружная отделка Ковка</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/decor/naruzhnaya-tehno/">Наружная отделка Техно</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/decor/naruzhnaya-lr/">Наружная отделка ЛР</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/decor/naruzhnaya-urban/">Наружная отделка Urban</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/tsetovaya-gamma/">Цветовая гамма</a>
-                                        </li>
-                                    </ul>
+
                                 </li>
                                 <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/">Раздвижные двери</a>
-                                    <ul>
-                                        <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/p-d-v-stenu/">Двери межкомнатные раздвижные в стену </a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/peregorodki/">Межкомнатные перегородки</a>
-                                            <ul>
-                                                <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/peregorodki/iz-stekla/">Межкомнатные перегородки из стекла</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/skladnye/">Двери складные</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/skrytye/">Скрытые двери</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/sdvizhnye/">Двери сдвижные</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/roto/">Рото двери</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/dveri-kupe/">Двери купе</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/knizhka/">Двери книжкой</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/peregorodka/">Перегородка</a>
-                                        </li>
-                                    </ul>
+
                                 </li>
                                 <li><a href="https://www.estet-doors.ru/catalog/skrytyj-korob/">Скрытый короб</a>
                                 </li>
                                 <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/">Стеновые панели</a>
-                                    <ul>
-                                        <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-flatness/">Коллекция FLATNESS</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/dlya-komnaty/">Стеновые панели для комнаты</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/st-pan-dlya-kuhni/">Стеновые панели для кухни</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/pod-derevo/">Стеновые панели из дерева</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-skyline/">Коллекция SKYLINE</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-quadro/">Коллекция QUADRO</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-lattice/">Коллекция LATTICE</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-janelle/">Коллекция JANELLE</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-sonata/">Коллекция SONATA</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-novella/">Коллекция NOVELLA</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-reanissance/">Коллекция RENAISSANCE</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-provence/">Коллекция PROVENCE</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-multistage/">Коллекция MULTISTAGE</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-genesis/">Коллекция GENESIS</a>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-astoria/">Коллекция ASTORIA</a>
-                                        </li>
-                                    </ul>
+
                                 </li>
                                 <li><a href="https://www.estet-doors.ru/catalog/furnitura/">Фурнитура для дверей</a>
-                                    <ul>
-                                        <li><a href="https://www.estet-doors.ru/catalog/furnitura/dvernye-ruchki/">Дверные ручки</a>
-                                            <ul>
-                                                <li><a href="https://www.estet-doors.ru/catalog/furnitura/dvernye-ruchki/dvernye-ruchki-armadillo/">Дверные ручки Armadillo</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/furnitura/dvernye-ruchki/dvernye-ruchki-fuaro/">Дверные ручки Fuaro</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/furnitura/petli/">Петли</a>
-                                            <ul>
-                                                <li><a href="https://www.estet-doors.ru/catalog/furnitura/petli/petli-armadillo/">Петли Armadillo</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/furnitura/petli/petli-fuaro/">Петли Fuaro</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/furnitura/nakladki/">Замки и защёлки</a>
-                                            <ul>
-                                                <li><a href="https://www.estet-doors.ru/catalog/furnitura/nakladki/zamki-agb/">Замки AGB</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/furnitura/nakladki/zamki-armadillo/">Замки Armadillo</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/furnitura/nakladki/zamki-i-zaschyolki_fuaro/">Замки и защёлки Fuaro</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="https://www.estet-doors.ru/catalog/furnitura/povorotniki/">Поворотники</a>
-                                            <ul>
-                                                <li><a href="https://www.estet-doors.ru/catalog/furnitura/povorotniki/povorotniki-armadillo/">Поворотники Armadillo</a></li>
-                                                <li><a href="https://www.estet-doors.ru/catalog/furnitura/povorotniki/povorotniki-fuaro/">Поворотники Fuaro</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+
                                 </li>
                                 <li><a href="https://www.estet-doors.ru/catalog/pogonazhnye-izdeliya/">Погонажные изделия</a>
                                 </li>
@@ -355,241 +159,58 @@
                                 <li><a href="https://www.estet-doors.ru/pokupatelyam/smotret-video-o-nashem-proizvodstve/">Смотреть видео о нашем производстве</a></li>
                             </ul>
                         </li>
-                        <li><a href="https://www.estet-doors.ru/partneram/">Партнерам</a></li>
-                        <li><a href="/pokupatelyam/akcii/">Акции</a></li>
-                        <li><a href="https://www.estet-doors.ru/uslugi/">Услуги</a></li>
-                        <li><a href="https://www.estet-doors.ru/magaziny/">Наши магазины</a></li>
                         <li><a href="https://www.estet-doors.ru/kontakty/">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
 
-            <a class="header-foreman site-btn site-btn-gray-border"
-               href="#measure-form"
-               data-fancybox>
-                Вызвать замерщика
-            </a>
         </div>
     </div>
     <div class="page-content">
         <div class="mobile_overlay"></div>
         <header class="site-header">
-            <div itemscope itemtype="http://schema.org/Organization" class="site-header-inner"><a itemprop="url" class="header-logo" href="/"><img itemprop="logo" src="https://www.estet-doors.ru/image/catalog/logo.png" alt=""></a>
+            <div itemscope itemtype="http://schema.org/Organization" class="site-header-inner"><a itemprop="url" class="header-logo" href="{{route('welcome')}}"><img itemprop="logo" src="https://www.estet-doors.ru/image/catalog/logo.png" alt=""></a>
                 <!-- <div class="header-contacts"><a class="header-phone" href="tel:+74952767555">+7 495 276-75-55</a><a class="header-callback" href="#callback-form" data-fancybox>Заказать звонок</a></div> -->
                 <div class="header-menu">
                     <nav class="catalog-menu">
                         <div class="header-contacts-mobile">
-                            <a class="header-phone" href="tel:+74952767555">+7 495 276-75-55</a>
-                            <a class="header-callback" href="#callback-form" data-fancybox>Заказать звонок</a>
+                            <a class="header-phone" href="tel:+380503381575">+38 050 338 1575</a>
+                            <a class="header-callback" href="#callback-form" data-fancybox>Замовити дзвінок</a>
                         </div>
                         <ul>
-                            <li><a href="https://www.estet-doors.ru/catalog/">Каталог товаров</a>
+                            <li><a href="{{route('catalog')}}">Каталог товарів</a>
 
                                 <ul>
-                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/">Межкомнатные двери</a>
-                                        <ul>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/v-komnatu/">Двери в комнату</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/">Коллекции дверей</a>
-                                                <ul>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/alto/">Межкомнатные двери Alto</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/era/">Межкомнатные двери Era</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/glamorous/">Межкомнатные двери Glamorous</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/mantone/">Межкомнатные двери Mantone</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/mio/">Межкомнатные двери Mio</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/perfect-volume/">Межкомнатные двери Perfect volume</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/sonata/">Межкомнатные двери Sonata</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/urban/">Межкомнатные двери Urban</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/novella/">Межкомнатные двери Novella</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/perfect/">Межкомнатные двери Perfect</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/verso/">Межкомнатные двери Verso</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/provance/">Межкомнатные двери Provance</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/royal/">Межкомнатные двери Royal</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/bliss/">Межкомнатные двери Bliss</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/ways/">Межкомнатные двери Ways</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/royal-r/">Межкомнатные двери Royal-R</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/genesis/">Межкомнатные двери Genesis</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/brussel/">Межкомнатные двери Brussel</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/mezhkomnatnye-dveri-astoria/">Межкомнатные двери Astoria</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/multistage/">Межкомнатные двери Multistage</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/janelle/">Межкомнатные двери Janelle</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/trend/">Межкомнатные двери Trend</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/elegance/">Межкомнатные двери Elegance</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/renaissance/">Межкомнатные двери Renaissance</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/zhaluziynye-dveri/">Жалюзийные двери</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/style/">Межкомнатные двери Style</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/prestige/">Межкомнатные двери Prestige</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/sirius/">Межкомнатные двери Sirius</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/baroque/">Межкомнатные двери Baroque</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/line/">Межкомнатные двери Line</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/klassicheskie/">Межкомнатные двери классика</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/haj-tek/">Межкомнатные двери хай тек</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/sovremennye/">Современные межкомнатные двери</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/stilnye/">Стильные межкомнатные двери</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-v-nalichii/">Двери в наличии</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dvustvorchatye/">Двустворчатые двери</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-po-cvetu/">Двери  по цвету</a>
-                                                <ul>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-po-cvetu/belye/">Белые двери со стеклом</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-po-cvetu/cvetnye-dveri/">Двери цветные</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-po-cvetu/venge/">Двери венге</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/">Двери для квартиры</a>
-                                                <ul>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dlya-kuhni/">Двери для кухни со стеклом</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dlya-tualeta/">Двери для туалета</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dlya-vannoj/">Двери для ванной со стеклом</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dlya-garderobnoj/">Раздвижные двери для гардеробной</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/so-steklom/">Двери со стеклом</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dveri-s-zerkalom/">Двери с зеркалом</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/gluhie/">Двери глухие</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/raspashnye/">Распашные двери</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/iz-sosny/">Двери из сосны</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/mdf/">Двери МДФ</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/pvh/">Двери ПВХ</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/ekoshpon/">Двери экошпон</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dvojnye/">Двойные двери</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/dekorativnye/">Декоративные двери</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/derevyannye/">Деревянные двери</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/razdvizhnye-sistemy/">Раздвижные системы</a>
-                                            </li>
-                                        </ul>
+                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/">Міжкімнатні двері</a>
+
                                     </li>
-                                    <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/">Входные двери</a>
-                                        <ul>
-                                            <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/kollektsii-dverey/">Коллекции дверей</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/vhodnye-dveri-v-nalichii/">Двери входные в наличии</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/decor/">Отделки входных дверей</a>
-                                                <ul>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/decor/naruzhnaya-minimo/">Наружная отделка Minimo</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/decor/naruzhnaya-kovka/">Наружная отделка Ковка</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/decor/naruzhnaya-tehno/">Наружная отделка Техно</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/decor/naruzhnaya-lr/">Наружная отделка ЛР</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/decor/naruzhnaya-urban/">Наружная отделка Urban</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/tsetovaya-gamma/">Цветовая гамма</a>
-                                            </li>
-                                        </ul>
+                                    <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/">Вхідні двері</a>
+
                                     </li>
-                                    <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/">Раздвижные двери</a>
-                                        <ul>
-                                            <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/p-d-v-stenu/">Двери межкомнатные раздвижные в стену </a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/peregorodki/">Межкомнатные перегородки</a>
-                                                <ul>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/peregorodki/iz-stekla/">Межкомнатные перегородки из стекла</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/skladnye/">Двери складные</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/skrytye/">Скрытые двери</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/sdvizhnye/">Двери сдвижные</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/roto/">Рото двери</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/dveri-kupe/">Двери купе</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/knizhka/">Двери книжкой</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/peregorodka/">Перегородка</a>
-                                            </li>
-                                        </ul>
+                                    <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/">Разсувні двері</a>
+
                                     </li>
-                                    <li><a href="https://www.estet-doors.ru/catalog/skrytyj-korob/">Скрытый короб</a>
+                                    <li><a href="https://www.estet-doors.ru/catalog/skrytyj-korob/">Двері прихованого монтажа</a>
                                     </li>
-                                    <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/">Стеновые панели</a>
-                                        <ul>
-                                            <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-flatness/">Коллекция FLATNESS</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/dlya-komnaty/">Стеновые панели для комнаты</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/st-pan-dlya-kuhni/">Стеновые панели для кухни</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/pod-derevo/">Стеновые панели из дерева</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-skyline/">Коллекция SKYLINE</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-quadro/">Коллекция QUADRO</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-lattice/">Коллекция LATTICE</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-janelle/">Коллекция JANELLE</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-sonata/">Коллекция SONATA</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-novella/">Коллекция NOVELLA</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-reanissance/">Коллекция RENAISSANCE</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-provence/">Коллекция PROVENCE</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-multistage/">Коллекция MULTISTAGE</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-genesis/">Коллекция GENESIS</a>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/kollekciya-astoria/">Коллекция ASTORIA</a>
-                                            </li>
-                                        </ul>
+                                    <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/">Вікна</a>
+
                                     </li>
-                                    <li><a href="https://www.estet-doors.ru/catalog/furnitura/">Фурнитура для дверей</a>
-                                        <ul>
-                                            <li><a href="https://www.estet-doors.ru/catalog/furnitura/dvernye-ruchki/">Дверные ручки</a>
-                                                <ul>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/furnitura/dvernye-ruchki/dvernye-ruchki-armadillo/">Дверные ручки Armadillo</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/furnitura/dvernye-ruchki/dvernye-ruchki-fuaro/">Дверные ручки Fuaro</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/furnitura/petli/">Петли</a>
-                                                <ul>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/furnitura/petli/petli-armadillo/">Петли Armadillo</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/furnitura/petli/petli-fuaro/">Петли Fuaro</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/furnitura/nakladki/">Замки и защёлки</a>
-                                                <ul>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/furnitura/nakladki/zamki-agb/">Замки AGB</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/furnitura/nakladki/zamki-armadillo/">Замки Armadillo</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/furnitura/nakladki/zamki-i-zaschyolki_fuaro/">Замки и защёлки Fuaro</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="https://www.estet-doors.ru/catalog/furnitura/povorotniki/">Поворотники</a>
-                                                <ul>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/furnitura/povorotniki/povorotniki-armadillo/">Поворотники Armadillo</a></li>
-                                                    <li><a href="https://www.estet-doors.ru/catalog/furnitura/povorotniki/povorotniki-fuaro/">Поворотники Fuaro</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                    <li><a href="https://www.estet-doors.ru/catalog/furnitura/">Фурнітура</a>
+
                                     </li>
-                                    <li><a href="https://www.estet-doors.ru/catalog/pogonazhnye-izdeliya/">Погонажные изделия</a>
+                                    <li><a href="https://www.estet-doors.ru/catalog/pogonazhnye-izdeliya/">Ворота</a>
                                     </li>
-                                    <li><a href="https://www.estet-doors.ru/catalog/vidy-stekol/">Виды стекол</a>
+                                    <li><a href="https://www.estet-doors.ru/catalog/vidy-stekol/">Ролети</a>
                                     </li>
-                                    <li><a href="https://www.estet-doors.ru/catalog/dekorativnoe-oformlenie/">Декоративное оформление</a>
+                                    <li><a href="https://www.estet-doors.ru/catalog/dekorativnoe-oformlenie/">Жалюзі</a>
                                     </li>
-                                    <li><a href="https://www.estet-doors.ru/cvetovaya-gamma/">Цветовая гамма</a>
+                                    <li><a href="https://www.estet-doors.ru/cvetovaya-gamma/">Плінтуси</a>
+                                    </li>
+                                    <li><a href="https://www.estet-doors.ru/cvetovaya-gamma/">Підвіконники</a>
+                                    </li>
+                                    <li><a href="https://www.estet-doors.ru/cvetovaya-gamma/">Сітки</a>
+                                    </li>
+                                    <li><a href="https://www.estet-doors.ru/cvetovaya-gamma/">Відкоси</a>
                                     </li>
                                 </ul>
                             </li>
@@ -598,33 +219,23 @@
                     <nav class="info-menu">
                         <ul>
                             <li>
-                                <a href="https://www.estet-doors.ru/about/">О компании</a>
+                                <a href="{{route('about')}}">Про компанію</a>
                                 <ul>
-                                    <li><a href="https://www.estet-doors.ru/about/nashi-preimuschestva/">Наши преимущества</a></li>
-                                    <li><a href="https://www.estet-doors.ru/about/o-nas/">О нас</a></li>
-                                    <li><a href="https://www.estet-doors.ru/about/vakansii/">Вакансии</a></li>
-                                    <li><a href="https://www.estet-doors.ru/about/tehnologii/">Технологии</a></li>
-                                    <li><a href="https://www.estet-doors.ru/about/faq/">Вопрос-ответ</a></li>
-                                    <li><a href="https://www.estet-doors.ru/about/novosti/">Новости</a></li>
-                                    <li><a href="https://www.estet-doors.ru/about/sertifikaty/">Сертификаты</a></li>
+                                    <li><a href="https://www.estet-doors.ru/about/nashi-preimuschestva/">Наші переваги</a></li>
+                                    <li><a href="https://www.estet-doors.ru/about/o-nas/">Про нас</a></li>
+                                    <li><a href="https://www.estet-doors.ru/about/tehnologii/">Технології</a></li>
+                                    <li><a href="https://www.estet-doors.ru/about/sertifikaty/">Сертифікати</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="https://www.estet-doors.ru/pokupatelyam/">Покупателям</a>
+                                <a href="{{route('toCustomers')}}">Покупцям</a>
                                 <ul>
-                                    <li><a href="https://www.estet-doors.ru/pokupatelyam/akcii/">Акции</a></li>
-                                    <li><a href="https://www.estet-doors.ru/pokupatelyam/slovar/">Словарь терминов</a></li>
-                                    <li><a href="https://www.estet-doors.ru/pokupatelyam/info-doors/">Статьи</a></li>
-                                    <li><a href="https://www.estet-doors.ru/pokupatelyam/kak-vybrat-dver/">Как выбрать дверь</a></li>
-                                    <li><a href="https://www.estet-doors.ru/pokupatelyam/polezno/">Полезно</a></li>
-                                    <li><a href="https://www.estet-doors.ru/pokupatelyam/smotret-video-o-nashem-proizvodstve/">Смотреть видео о нашем производстве</a></li>
+                                    <li><a href="https://www.estet-doors.ru/pokupatelyam/slovar/">Словник термінів</a></li>
+                                    <li><a href="https://www.estet-doors.ru/pokupatelyam/kak-vybrat-dver/">Як вибрати двері</a></li>
+                                    <li><a href="https://www.estet-doors.ru/pokupatelyam/polezno/">Корисно</a></li>
                                 </ul>
                             </li>
-                            <li><a href="https://www.estet-doors.ru/partneram/">Партнерам</a></li>
-                            <li><a href="/pokupatelyam/akcii/">Акции</a></li>
-                            <li><a href="https://www.estet-doors.ru/uslugi/">Услуги</a></li>
-                            <li><a href="https://www.estet-doors.ru/magaziny/">Наши магазины</a></li>
-                            <li><a href="https://www.estet-doors.ru/kontakty/">Контакты</a></li>
+                            <li><a href="{{route('contacts')}}">Контакти</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -635,13 +246,9 @@
                     </div>
                     <div class="header-order-info uppercase_text text_center">
                         <div class="header-order-summ site-price"><span class="price-val">0</span><span class="price-currency">руб.</span></div>
-                        <div class="header-order-title">Оформить заказ</div>
+                        <div class="header-order-title">Оформити замовлення</div>
                     </div>
                 </a>
-
-
-
-                <a class="header-foreman site-btn site-btn-gray-border uppercase_text text_center" href="#measure-form" data-fancybox>Вызвать замерщика</a>
             </div>
         </header>
 
