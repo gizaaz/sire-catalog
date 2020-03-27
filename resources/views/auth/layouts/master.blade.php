@@ -51,7 +51,7 @@
                     <ul class="nav navbar-nav">
                         <li><a
                                 href="{{route('categories.index')}}">Категорії</a></li>
-                        <li><a href="http://laravel-diplom-1.rdavydov.ru/admin/products">Товари</a>
+                        <li><a href="{{route('products.index')}}">Товари</a>
                         </li>
                         <li><a href="{{route('home')}}">Замовлення</a></li>
                     </ul>

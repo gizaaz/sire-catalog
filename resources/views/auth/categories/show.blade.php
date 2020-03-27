@@ -33,7 +33,7 @@
             {{--</tr>--}}
             <tr>
                 <td>Зображення</td>
-                <td><img src="http://laravel-diplom-1.rdavydov.ru/storage/categories/appliance.jpg"
+                <td><img src="{{Storage::url($category->images)}}"
                          height="240px"></td>
             </tr>
             <tr>
