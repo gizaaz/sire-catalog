@@ -50,10 +50,10 @@
                 @auth
                     <ul class="nav navbar-nav">
                         <li><a
-                                href="http://laravel-diplom-1.rdavydov.ru/admin/categories">Категорії</a></li>
+                                href="{{route('categories.index')}}">Категорії</a></li>
                         <li><a href="http://laravel-diplom-1.rdavydov.ru/admin/products">Товари</a>
                         </li>
-                        <li><a href="http://laravel-diplom-1.rdavydov.ru/admin/orders">Замовлення</a></li>
+                        <li><a href="{{route('home')}}">Замовлення</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="nav-item dropdown">

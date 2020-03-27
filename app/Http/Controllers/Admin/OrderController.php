@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Order;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
@@ -24,6 +25,8 @@ class OrderController extends Controller
      */
     public function index()
     {
-        return view('auth.admin.orders');
+        $orders = Order::where('status', true)->get();
+        return view('auth.orders.index', compact('orders'));
+//        return view('auth.orders.orders');
     }
 }

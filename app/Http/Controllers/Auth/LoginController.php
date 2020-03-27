@@ -25,7 +25,7 @@ class LoginController extends Controller
 
     protected function redirectTo()
     {
-        return route('route');
+        return route('home');
     }
 
     /**
