@@ -31,7 +31,7 @@
                                         {{ $product->name }}
                                     </a>
                                 </td>
-                                <td><span class="badge">1</span></td>
+                                <td><span class="badge">{{$product->pivot->count}}</span></td>
                                 <td>{{ $product->getPriceForCount()}} currency</td>
                                 <td>{{ $product->price }} currency</td>
                             </tr>
