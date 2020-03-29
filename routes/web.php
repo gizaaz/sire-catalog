@@ -27,6 +27,7 @@ Route::group([
     'prefix' => 'admin',
 ], function(){
     Route::get('/orders', 'OrderController@index')->name('home');
+    Route::get('/orders/{order}', 'OrderController@show')->name('orders.show');
     Route::resource('categories', 'CategoryController');
     Route::resource('products', 'ProductController');
 

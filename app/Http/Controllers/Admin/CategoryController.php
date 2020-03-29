@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Category;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CategoryRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -36,17 +37,16 @@ class CategoryController extends Controller
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CategoryRequest $request)
     {
-        $issetImage = $request->file('image');
-        if($issetImage) {
-            $path = $request->file('image')->store('categories');
-            $params = $request->all();
+        $params = $request->all();
+        unset($params['images']);
+        if ($request->has('images')) {
+            $path = $request->file('images')->store('categories');
             $params['images'] = $path;
-            Category::create($params);
-        } else {
-            Category::create($request->all());
         }
+
+        Category::create($params);
         return redirect()->route('categories.index');
     }
 
@@ -79,18 +79,17 @@ class CategoryController extends Controller
      * @param  \App\Category $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Category $category)
+    public function update(CategoryRequest $request, Category $category)
     {
-        $issetImage = $request->file('image');
-        if($issetImage) {
+        $params = $request->all();
+        unset($params['images']);
+        if ($request->has('images')) {
             Storage::delete($category->image);
-            $path = $request->file('image')->store('categories');
-            $params = $request->all();
+            $path = $request->file('images')->store('categories');
             $params['images'] = $path;
-            $category->update($params);
-        } else {
-            $category->update($request->all());
         }
+
+        $category->update($params);
         return redirect()->route('categories.index');
     }
 

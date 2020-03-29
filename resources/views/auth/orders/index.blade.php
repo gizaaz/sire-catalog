@@ -56,11 +56,11 @@
                     <td>{{ $order->email}}</td>
                     <td>{{ $order->description}}</td>
                     <td>{{ $order->created_at->format('H:i d.m.Y')}}</td>
-                    <td>Price грн.</td>
+                    <td>{{ $order->getFullPrice() }} currency</td>
                     <td>
                         <div class="btn-group" role="group">
                             <a class="btn btn-success" type="button"
-                               href="http://laravel-diplom-1.rdavydov.ru/admin/orders/1">Открыть</a>
+                               href="{{route('orders.show', $order)}}">Переглянути</a>
                         </div>
                     </td>
                 </tr>

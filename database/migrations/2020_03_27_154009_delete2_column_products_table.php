@@ -15,6 +15,7 @@ class Delete2ColumnProductsTable extends Migration
     {
         Schema::table('products', function (Blueprint $table) {
             $table->dropColumn('title');
+            $table->dropColumn('product_id');
         });
     }
 

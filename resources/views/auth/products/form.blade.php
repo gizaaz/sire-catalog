@@ -36,8 +36,11 @@
                 <div class="input-group row">
                     <label for="name" class="col-sm-2 col-form-label">Назва продукту: </label>
                     <div class="col-sm-6">
+                        @error('name')
+                        <div class="alert alert-danger">{{$message}}</div>
+                        @enderror
                         <input type="text" class="form-control" name="name" id="name"
-                               value="@isset($product){{ $product->name }}@endisset">
+                               value="{{old('name' , isset($product) ? $product->name : null)}}">
                     </div>
                 </div>
                 <br>
@@ -61,8 +64,11 @@
                 <div class="input-group row">
                     <label for="description" class="col-sm-2 col-form-label">Опис: </label>
                     <div class="col-sm-6">
+                        @error('description')
+                            <div class="alert alert-danger">{{$message}}</div>
+                        @enderror
 								<textarea name="description" id="description" cols="72"
-                                          rows="7">@isset($product){{ $product->description }}@endisset</textarea>
+                                          rows="7">{{old('description' , isset($product) ? $product->description : null)}}</textarea>
                     </div>
                 </div>
                 <br>
@@ -70,7 +76,7 @@
                     <label for="image" class="col-sm-2 col-form-label">Зображення: </label>
                     <div class="col-sm-10">
                         <label class="btn btn-default btn-file">
-                            Завантажити <input type="file" style="display: none;" name="image" id="image">
+                            Завантажити <input type="file" style="display: none;" name="images" id="image">
                         </label>
                     </div>
                 </div>
@@ -78,8 +84,11 @@
                 <div class="input-group row">
                     <label for="price" class="col-sm-2 col-form-label">Ціна: </label>
                     <div class="col-sm-2">
+                        @error('price')
+                        <div class="alert alert-danger">{{$message}}</div>
+                        @enderror
                         <input type="text" class="form-control" name="price" id="price"
-                               value="@isset($product){{ $product->price }}@endisset">
+                               value="{{old('price' , isset($product) ? $product->price : null)}}">
                     </div>
                 </div>
                 <br>
@@ -87,12 +96,13 @@
                         <label for="currency" class="col-sm-2 col-form-label">Валюта: </label>
                         <div class="col-sm-6">
                             <select name="currency" id="currency" class="form-control">
-                                    <option value="EUR">EUR</option>
-                                    <option value="USD">USD</option>
+                                    {{--<option value="EUR">EUR</option>--}}
+                                    {{--<option value="USD">USD</option>--}}
                                     <option value="ГРН">ГРН</option>
                             </select>
                         </div>
                     </div>
+                    <br>
                     <div class="input-group row">
                         <label for="status" class="col-sm-2 col-form-label">Статус: </label>
                         <div class="col-sm-6">

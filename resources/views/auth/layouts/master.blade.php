@@ -17,7 +17,7 @@
     <!-- Styles -->
     <link href="/css/app2.css" rel="stylesheet">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/admin.css" rel="stylesheet">
+    <link href="/css/fix.css" rel="stylesheet">
 </head>
 <body>
 <div id="app">

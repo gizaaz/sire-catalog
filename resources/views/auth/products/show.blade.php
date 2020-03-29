@@ -41,7 +41,14 @@
             </tr>
             <tr>
                 <td>Категорія</td>
-                <td>{{ $product->category->name }}</td>
+{{--                <td>{{ $product->category->name }}</td>--}}
+                <td>
+                    @if(isset($product->category->name))
+                        {{$product->category->name}}
+                    @else
+                        <span style="color: red"> КАТЕГОРІЮ НЕ ЗНАЙДЕНО</span>
+                    @endif
+                </td>
             </tr>
             </tbody>
         </table>

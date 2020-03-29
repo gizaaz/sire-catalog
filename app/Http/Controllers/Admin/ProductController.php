@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Category;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ProductRequest;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -38,17 +39,16 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ProductRequest $request)
     {
-        $issetImage = $request->file('image');
-        if($issetImage){
-            $path = $request->file('image')->store('products');
-            $params = $request->all();
+        $params = $request->all();
+        unset($params['images']);
+        if ($request->has('images')) {
+            $path = $request->file('images')->store('products');
             $params['images'] = $path;
-            Product::create($params);
-        } else {
-            Product::create($request->all());
         }
+
+        Product::create($params);
         return redirect()->route('products.index');
     }
 
@@ -82,18 +82,17 @@ class ProductController extends Controller
      * @param  \App\Product $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(ProductRequest $request, Product $product)
     {
-        $issetImage = $request->file('image');
-        if($issetImage){
+        $params = $request->all();
+        unset($params['images']);
+        if ($request->has('images')) {
             Storage::delete($product->images);
-            $path = $request->file('image')->store('products');
-            $params = $request->all();
+            $path = $request->file('images')->store('products');
             $params['images'] = $path;
-            $product->update($params);
-        } else {
-            $product->update($request->all());
         }
+
+        $product->update($params);
         return redirect()->route('products.index');
     }
 
