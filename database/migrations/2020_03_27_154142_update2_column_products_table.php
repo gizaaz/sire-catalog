@@ -14,7 +14,7 @@ class Update2ColumnProductsTable extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->id();
+            $table->id()->first();
             $table->string("name")->after('id');
         });
     }
