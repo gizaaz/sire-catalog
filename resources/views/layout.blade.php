@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="ru">
+<html lang="ru">
 <head>
-    <meta name="cmsmagazine" content="7a07349553113a03d820998046df0929" />
-    <meta name="tagline" content="https://webprofy.ru/"/>
-    <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
     <base href="https://www.estet-doors.ru/" />
     <title>Магазины межкомнатных дверей - продажа в Москве, купить межкомнатные двери в интернет-магазине официального сайта ESTET</title>
@@ -40,20 +37,19 @@
 
     <meta property="og:image" content="https://www.estet-doors.ru/image/catalog/logo.png"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:url" content= "https://www.estet-doors.ru/" />
 
-    <link rel="stylesheet" href="katalog/view/theme/default/assets/css/screen.css?v=5">
-    <link rel="stylesheet" href="katalog/view/theme/default/assets/css/custom.css">
+    <link rel="stylesheet" href="{{asset('css/screen.css')}}">
+    <link rel="stylesheet" href="{{asset('css/custom.css')}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="katalog/view/javascript/jquery3/jquery-3.2.1.min.js" type="text/javascript"></script>
-    <script src="katalog/view/javascript/common.js" type="text/javascript"></script>
-    <script src="katalog/view/javascript/wm/custom_cart.js" type="text/javascript"></script>
+    <script src="{{asset('jquery3/jquery-3.2.1.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('js/common.js')}}" type="text/javascript"></script>
+    <script src="{{asset('js/custom_cart.js')}}" type="text/javascript"></script>
     <link href="https://www.estet-doors.ru/" rel="canonical" />
-    <script src="katalog/view/javascript/wm/jquery.form.min.js" type="text/javascript"></script>
-    <script src="katalog/view/theme/default/assets/js/jquery.maskedinput.min.js" type="text/javascript"></script>
-    <script src="katalog/view/theme/default/assets/js/custom.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="katalog/view/javascript/cookieAllowAccess/cookieAllowAccess.min.css">
-    <script src="katalog/view/javascript/cookieAllowAccess/cookieAllowAccess.js" type="text/javascript" async></script>
+    <script src="{{asset('js/jquery.form.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('js/jquery.maskedinput.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('js/custom.js')}}" type="text/javascript"></script>
+    <link rel="stylesheet" href="{{asset('cookieAllowAccess/cookieAllowAccess.min.css')}}">
+    <script src="{{asset('cookieAllowAccess/cookieAllowAccess.js')}}" type="text/javascript" async></script>
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
@@ -98,37 +94,20 @@
             <div class="mobile-left-menu">
                 <nav class="catalog-menu-mobile">
                     <div class="header-contacts-mobile">
-                        <a class="header-phone" href="tel:+74952767555">+7 495 276-75-55</a>
-                        <a class="header-callback" href="#callback-form" data-fancybox>Заказать звонок</a>
+                        <a class="header-phone" href="tel:+74952767555">+38 050 338 1575</a>
+                        <a class="header-callback" href="#callback-form" data-fancybox>Замовити дзвінок</a>
                     </div>
                     <ul>
-                        <li><a href="https://www.estet-doors.ru/catalog/">Каталог товаров</a>
+                        <li><a href="{{route('catalog')}}">Каталог товарів</a>
 
                             <ul>
-                                <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/">Межкомнатные двери</a>
+                                <li><a href="{{route('catalog')}}">Каталог товарів</a>
 
-                                </li>
-                                <li><a href="https://www.estet-doors.ru/catalog/vhodnye-dveri/">Входные двери</a>
-
-                                </li>
-                                <li><a href="https://www.estet-doors.ru/catalog/razdvizhnye-dveri/">Раздвижные двери</a>
-
-                                </li>
-                                <li><a href="https://www.estet-doors.ru/catalog/skrytyj-korob/">Скрытый короб</a>
-                                </li>
-                                <li><a href="https://www.estet-doors.ru/catalog/stenovye-paneli/">Стеновые панели</a>
-
-                                </li>
-                                <li><a href="https://www.estet-doors.ru/catalog/furnitura/">Фурнитура для дверей</a>
-
-                                </li>
-                                <li><a href="https://www.estet-doors.ru/catalog/pogonazhnye-izdeliya/">Погонажные изделия</a>
-                                </li>
-                                <li><a href="https://www.estet-doors.ru/catalog/vidy-stekol/">Виды стекол</a>
-                                </li>
-                                <li><a href="https://www.estet-doors.ru/catalog/dekorativnoe-oformlenie/">Декоративное оформление</a>
-                                </li>
-                                <li><a href="https://www.estet-doors.ru/cvetovaya-gamma/">Цветовая гамма</a>
+                                    <ul>
+                                        @foreach($category as $cat)
+                                            <li><a href="{{route('category', ['id'=> $cat->id])}}">{{$cat->category_name}}</a>
+                                        @endforeach
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
@@ -136,30 +115,28 @@
                 </nav>
                 <nav class="info-menu-mobile">
                     <ul>
+                        <li><a href="{{route('services')}}">Послуги</a></li>
+                        <li><a href="{{route('partner')}}">Партнерам</a></li>
+                        <li><a href="{{route('sales')}}">Акції</a></li>
                         <li>
-                            <a href="https://www.estet-doors.ru/about/">О компании</a>
+                            <a href="{{route('about')}}">Про компанію</a>
                             <ul>
-                                <li><a href="https://www.estet-doors.ru/about/nashi-preimuschestva/">Наши преимущества</a></li>
-                                <li><a href="https://www.estet-doors.ru/about/o-nas/">О нас</a></li>
-                                <li><a href="https://www.estet-doors.ru/about/vakansii/">Вакансии</a></li>
-                                <li><a href="https://www.estet-doors.ru/about/tehnologii/">Технологии</a></li>
-                                <li><a href="https://www.estet-doors.ru/about/faq/">Вопрос-ответ</a></li>
-                                <li><a href="https://www.estet-doors.ru/about/novosti/">Новости</a></li>
-                                <li><a href="https://www.estet-doors.ru/about/sertifikaty/">Сертификаты</a></li>
+                                <li><a href="https://www.estet-doors.ru/about/nashi-preimuschestva/">Наші переваги</a></li>
+                                <li><a href="https://www.estet-doors.ru/about/o-nas/">Про нас</a></li>
+                                <li><a href="https://www.estet-doors.ru/about/tehnologii/">Технології</a></li>
+                                <li><a href="https://www.estet-doors.ru/about/sertifikaty/">Сертифікати</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="https://www.estet-doors.ru/pokupatelyam/">Покупателям</a>
+                            <a href="{{route('toCustomers')}}">Покупцям</a>
                             <ul>
-                                <li><a href="https://www.estet-doors.ru/pokupatelyam/akcii/">Акции</a></li>
-                                <li><a href="https://www.estet-doors.ru/pokupatelyam/slovar/">Словарь терминов</a></li>
-                                <li><a href="https://www.estet-doors.ru/pokupatelyam/info-doors/">Статьи</a></li>
-                                <li><a href="https://www.estet-doors.ru/pokupatelyam/kak-vybrat-dver/">Как выбрать дверь</a></li>
-                                <li><a href="https://www.estet-doors.ru/pokupatelyam/polezno/">Полезно</a></li>
-                                <li><a href="https://www.estet-doors.ru/pokupatelyam/smotret-video-o-nashem-proizvodstve/">Смотреть видео о нашем производстве</a></li>
+                                <li><a href="https://www.estet-doors.ru/pokupatelyam/slovar/">Словник термінів</a></li>
+                                <li><a href="https://www.estet-doors.ru/pokupatelyam/kak-vybrat-dver/">Як вибрати двері</a></li>
+                                <li><a href="https://www.estet-doors.ru/pokupatelyam/polezno/">Корисно</a></li>
                             </ul>
                         </li>
-                        <li><a href="https://www.estet-doors.ru/kontakty/">Контакты</a></li>
+                        <li><a href="{{route('contacts')}}">Контакти</a></li>
+
                     </ul>
                 </nav>
             </div>
@@ -182,7 +159,7 @@
 
                                 <ul>
                                     @foreach($category as $cat)
-                                    <li><a href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/">{{$cat->category_name}}</a>
+                                    <li><a href="{{route('category', ['id'=> $cat->id])}}">{{$cat->category_name}}</a>
                                     @endforeach
                                 </ul>
                             </li>
@@ -190,6 +167,9 @@
                     </nav>
                     <nav class="info-menu">
                         <ul>
+                            <li><a href="{{route('services')}}">Послуги</a></li>
+                            <li><a href="{{route('partner')}}">Партнерам</a></li>
+                            <li><a href="{{route('sales')}}">Акції</a></li>
                             <li>
                                 <a href="{{route('about')}}">Про компанію</a>
                                 <ul>
