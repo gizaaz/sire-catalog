@@ -12,7 +12,27 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes([
+    'reset' => false,
+    'confirm' => false,
+    'verify' => false,
+//    'register' => false,
+]);
 
+Route::get('/logout', 'Auth\LoginController@logout')->name('get-logout');
+
+Route::group([
+    'middleware' => 'auth',
+    'namespace' => 'Admin',
+    'prefix' => 'admin',
+], function(){
+    Route::get('/orders', 'OrderController@index')->name('home');
+    Route::get('/orders/{order}', 'OrderController@show')->name('orders.show');
+    Route::resource('categories', 'CategoryController');
+    Route::resource('products', 'ProductController');
+
+
+});
 Route::get('/', 'WelcomeController@index')->name('welcome');
 Route::get('/about', 'AboutController@index')->name('about');
 Route::get('/contacts', 'ContactsController@index')->name('contacts');
