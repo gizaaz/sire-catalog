@@ -18,4 +18,9 @@ Route::get('/about', 'AboutController@index')->name('about');
 Route::get('/contacts', 'ContactsController@index')->name('contacts');
 Route::get('/to_customers', 'ToCustomersController@index')->name('toCustomers');
 Route::get('/catalog', 'CatalogController@index')->name('catalog');
-Route::get('/product', 'ProductsController@index')->name('product');
+Route::get('/to_partner', 'ParthnerController@index')->name('partner');
+Route::get('/sales', 'SalesController@index')->name('sales');
+Route::get('/services', 'ServicesController@index')->name('services');
+
+Route::get('/product/{id}', 'ProductsController@index')->name('product');
+Route::get('/category/{id}', 'CategoryController@index')->name('category');
