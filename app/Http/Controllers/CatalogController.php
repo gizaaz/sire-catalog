@@ -3,13 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class WelcomeController extends Controller
+class CatalogController extends Controller
 {
     public function index()
     {
         $category = Category::get();
-        return view('index' , compact('category'));
+        return view('catalog', compact('category'));
     }
 }
