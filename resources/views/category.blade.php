@@ -891,9 +891,9 @@
                                 @foreach($products as $product)
                                 <div class="goods-item-wrapper">
                                     <div class="goods-item">
-                                        <div class="goods-item-img"><a href="{{route('product', ['id'=> $product->product_id])}}"><img src="https://www.estet-doors.ru/image/cache/catalog/category/brussel/brussel_br5-x_nf_jasen-grau-117x234.png" alt="Межкомнатная дверь BR5X"></a>
+                                        <div class="goods-item-img"><a href="{{route('product', ['id'=> $product->id])}}"><img src="https://www.estet-doors.ru/image/cache/catalog/category/brussel/brussel_br5-x_nf_jasen-grau-117x234.png" alt="Межкомнатная дверь BR5X"></a>
                                         </div>
-                                        <div class="goods-item-bottom"><a class="goods-item-title" href="{{route('product', ['id'=> $product->product_id])}}">{{$product->name}}</a>
+                                        <div class="goods-item-bottom"><a class="goods-item-title" href="{{route('product', ['id'=> $product->id])}}">{{$product->name}}</a>
                                             <div class="goods-price">
                                                 <div class="goods-item-price site-price">
                                                     <span class="price-val">Ціна: {{$product->price}} </span>

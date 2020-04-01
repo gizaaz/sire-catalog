@@ -105,7 +105,7 @@
 
                                     <ul>
                                         @foreach($category as $cat)
-                                            <li><a href="{{route('category', ['id'=> $cat->id])}}">{{$cat->category_name}}</a>
+                                            <li><a href="{{route('category', ['id'=> $cat->id])}}">{{$cat->name}}</a>
                                         @endforeach
                                     </ul>
                                 </li>
@@ -159,7 +159,7 @@
 
                                 <ul>
                                     @foreach($category as $cat)
-                                    <li><a href="{{route('category', ['id'=> $cat->id])}}">{{$cat->category_name}}</a>
+                                    <li><a href="{{route('category', ['id'=> $cat->id])}}">{{$cat->name}}</a>
                                     @endforeach
                                 </ul>
                             </li>
