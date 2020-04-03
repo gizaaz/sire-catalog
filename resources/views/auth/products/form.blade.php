@@ -65,19 +65,22 @@
                     <label for="description" class="col-sm-2 col-form-label">Опис: </label>
                     <div class="col-sm-6">
                         @error('description')
-                            <div class="alert alert-danger">{{$message}}</div>
+                        <div class="alert alert-danger">{{$message}}</div>
                         @enderror
-								<textarea name="description" id="description" cols="72"
-                                          rows="7">{{old('description' , isset($product) ? $product->description : null)}}</textarea>
+                        <textarea name="description" id="description" cols="72"
+                                  rows="7">{{old('description' , isset($product) ? $product->description : null)}}</textarea>
                     </div>
                 </div>
                 <br>
                 <div class="input-group row">
                     <label for="image" class="col-sm-2 col-form-label">Зображення: </label>
                     <div class="col-sm-10">
-                        <label class="btn btn-default btn-file">
-                            Завантажити <input type="file" style="display: none;" name="images" id="image">
-                        </label>
+                        @isset($images)
+                            @foreach($images as $image)
+                                <td><img class="remove_img close_img" src="{{Storage::url($image['image'])}}" height="140px" data-id="{{$image['id']}}"></td>
+                            @endforeach
+                        @endisset
+                        <input type="file" multiple name="images[]" id="image">Виберіть одне або декілька зображень
                     </div>
                 </div>
                 <br>
@@ -92,33 +95,33 @@
                     </div>
                 </div>
                 <br>
-                    <div class="input-group row">
-                        <label for="currency" class="col-sm-2 col-form-label">Валюта: </label>
-                        <div class="col-sm-6">
-                            <select name="currency" id="currency" class="form-control">
-                                    {{--<option value="EUR">EUR</option>--}}
-                                    {{--<option value="USD">USD</option>--}}
-                                    <option value="ГРН">ГРН</option>
-                            </select>
-                        </div>
+                <div class="input-group row">
+                    <label for="currency" class="col-sm-2 col-form-label">Валюта: </label>
+                    <div class="col-sm-6">
+                        <select name="currency" id="currency" class="form-control">
+                            {{--<option value="EUR">EUR</option>--}}
+                            {{--<option value="USD">USD</option>--}}
+                            <option value="ГРН">ГРН</option>
+                        </select>
                     </div>
-                    <br>
-                    <div class="input-group row">
-                        <label for="status" class="col-sm-2 col-form-label">Статус: </label>
-                        <div class="col-sm-6">
-                            <select name="status" id="status" class="form-control">
-                                    <option value="1">В наявності</option>
-                                    <option value="0">Продано</option>
-                            </select>
-                        </div>
+                </div>
+                <br>
+                <div class="input-group row">
+                    <label for="status" class="col-sm-2 col-form-label">Статус: </label>
+                    <div class="col-sm-6">
+                        <select name="status" id="status" class="form-control">
+                            <option value="1">В наявності</option>
+                            <option value="0">Продано</option>
+                        </select>
                     </div>
+                </div>
                 {{--<br>--}}
                 {{--<div class="input-group row">--}}
-                    {{--<label for="status" class="col-sm-2 col-form-label">Статус: </label>--}}
-                    {{--<div class="col-sm-2">--}}
-                        {{--<input type="text" class="form-control" name="status" id="status"--}}
-                               {{--value="@isset($product){{ $product->status }}@endisset">--}}
-                    {{--</div>--}}
+                {{--<label for="status" class="col-sm-2 col-form-label">Статус: </label>--}}
+                {{--<div class="col-sm-2">--}}
+                {{--<input type="text" class="form-control" name="status" id="status"--}}
+                {{--value="@isset($product){{ $product->status }}@endisset">--}}
+                {{--</div>--}}
                 {{--</div>--}}
                 <button class="btn btn-success">Зберегти</button>
             </div>

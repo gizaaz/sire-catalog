@@ -30,7 +30,7 @@ Route::group([
     Route::get('/orders/{order}', 'OrderController@show')->name('orders.show');
     Route::resource('categories', 'CategoryController');
     Route::resource('products', 'ProductController');
-
+    Route::post('product/image/delete','ProductController@deleteImage');
 
 });
 Route::get('/', 'WelcomeController@index')->name('welcome');

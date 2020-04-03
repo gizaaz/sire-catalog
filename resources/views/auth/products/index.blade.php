@@ -4,7 +4,8 @@
 
 @section('content')
     <div class="col-md-12">
-        <h1>Товары</h1>
+        <h1>Товари</h1>
+        <a class="btn btn-success custom-fix" type="button" href="{{ route('products.create') }}">Добавити товар</a>
         <table class="table">
             <tbody>
             <tr>
@@ -32,7 +33,7 @@
             </tr>
             @foreach($products as $product)
                 <tr>
-                    <td>{{ $product->product_id}}</td>
+                    <td>{{ $product->id}}</td>
                     {{--<td>{{ $product->code }}</td>--}}
                     <td>{{ $product->name }}</td>
                     <td>
@@ -67,6 +68,5 @@
             @endforeach
             </tbody>
         </table>
-        <a class="btn btn-success" type="button" href="{{ route('products.create') }}">Добавити товар</a>
     </div>
 @endsection

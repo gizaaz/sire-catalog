@@ -5,6 +5,8 @@
 @section('content')
     <div class="col-md-12">
         <h1>Категорії</h1>
+        <a class="btn btn-success custom-fix" type="button"
+           href="{{ route('categories.create') }}">Створити категорію</a>
         <table class="table">
             <tbody>
             <tr>
@@ -39,7 +41,5 @@
             @endforeach
             </tbody>
         </table>
-        <a class="btn btn-success" type="button"
-           href="{{ route('categories.create') }}">Створити категорію</a>
     </div>
 @endsection

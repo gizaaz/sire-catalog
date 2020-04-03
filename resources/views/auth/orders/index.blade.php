@@ -1,10 +1,10 @@
 @extends('auth.layouts.master')
 
-@section('title', 'Заказы')
+@section('title', 'Замовлення')
 
 @section('content')
     <div class="col-md-12">
-        <h1>Заказы</h1>
+        <h1>Замовлення</h1>
         <table class="table">
             <tbody>
             <tr>
@@ -20,9 +20,9 @@
                 <th>
                     E-mail
                 </th>
-                <th>
-                    Лист
-                </th>
+                {{--<th>--}}
+                    {{--Лист--}}
+                {{--</th>--}}
                 <th>
                     Дата замовлення
                 </th>
@@ -54,7 +54,7 @@
                     <td>{{ $order->user_name}}</td>
                     <td>{{ $order->phone}}</td>
                     <td>{{ $order->email}}</td>
-                    <td>{{ $order->description}}</td>
+                    {{--<td>{{ $order->description}}</td>--}}
                     <td>{{ $order->created_at->format('H:i d.m.Y')}}</td>
                     <td>{{ $order->getFullPrice() }} currency</td>
                     <td>
