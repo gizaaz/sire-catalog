@@ -32,9 +32,21 @@
                 {{--<td>{{ $category->description }}</td>--}}
             {{--</tr>--}}
             <tr>
+                <td>Назва підкатегорії</td>
+                <td>
+                @foreach($child_category as $child)
+                {{$child->name}}<br>
+                @endforeach
+                    </td>
+            </tr>
+            <tr>
                 <td>Зображення</td>
-                <td><img src="{{Storage::url($category->images)}}"
-                         height="240px"></td>
+                <td>
+                    @if(!is_null($category->images))
+                    <img src="{{Storage::url($category->images)}}"
+                         height="240px">
+                        @endif
+                </td>
             </tr>
             <tr>
                 <td>Кількість товарів</td>

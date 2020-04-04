@@ -56,9 +56,7 @@
                 <div class="input-group row">
                     <label for="image" class="col-sm-2 col-form-label">Зображення: </label>
                     <div class="col-sm-10">
-                        <label class="btn btn-default btn-file">
-                            Завантажити <input type="file" style="display: none;" name="images" id="image">
-                        </label>
+                            <input type="file" name="images" id="image">Виберіть зображення
                     </div>
                 </div>
                 <button class="btn btn-success">Зберегти</button>

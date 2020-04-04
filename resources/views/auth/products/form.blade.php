@@ -25,14 +25,6 @@
                     @method('PUT')
                 @endisset
                 @csrf
-                {{--<div class="input-group row">--}}
-                {{--<label for="code" class="col-sm-2 col-form-label">Код: </label>--}}
-                {{--<div class="col-sm-6">--}}
-                {{--<input type="text" class="form-control" name="code" id="code"--}}
-                {{--value="@isset($product){{ $product->code }}@endisset">--}}
-                {{--</div>--}}
-                {{--</div>--}}
-                {{--<br>--}}
                 <div class="input-group row">
                     <label for="name" class="col-sm-2 col-form-label">Назва продукту: </label>
                     <div class="col-sm-6">
@@ -49,14 +41,32 @@
                     <div class="col-sm-6">
                         <select name="category_id" id="category_id" class="form-control">
                             @foreach($categories as $category)
-                                <option value="{{$category->id}}"
-                                        @isset($product)
-                                        @if($product->category_id == $category->id)
-                                        selected
-                                    @endif
-                                    @endisset
-                                >{{$category->name}}</option>
+
+                                @if(is_null($category->category_id))
+                                    <option value="{{$category->id}}"
+                                            @isset($product)
+                                            @if($product->category_id == $category->id)
+                                            selected
+                                        @endif
+                                        @endisset
+                                    >{{$category->name}}</option>
+                                @endif
+
+                            @foreach($child_category as $child)
+                                        @if($child->category_id == $category->id)
+                                    <option value="{{$child->id}}"
+                                            @isset($product)
+                                            @if($product->category_id == $child->id)
+                                            selected
+                                        @endif
+                                        @endisset
+                                    >- {{$child->name}}</option>
+                                        @endif
+
+                                    @endforeach
+
                             @endforeach
+
                         </select>
                     </div>
                 </div>
@@ -77,7 +87,8 @@
                     <div class="col-sm-10">
                         @isset($images)
                             @foreach($images as $image)
-                                <td><img class="remove_img close_img" src="{{Storage::url($image['image'])}}" height="140px" data-id="{{$image['id']}}"></td>
+                                <td><img class="remove_img close_img" src="{{Storage::url($image['image'])}}"
+                                         height="140px" data-id="{{$image['id']}}"></td>
                             @endforeach
                         @endisset
                         <input type="file" multiple name="images[]" id="image">Виберіть одне або декілька зображень

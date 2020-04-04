@@ -31,7 +31,12 @@ class ProductController extends Controller
     public function create()
     {
         $categories = Category::get();
-        return view('auth.products.form', compact('categories'));
+//        $categories = Category::whereNull('category_id')
+//            ->with('childrenCategories')
+//            ->get();
+        $child_category = Category::whereNotNull('category_id')->get();
+//        dd($child_category);
+        return view('auth.products.form', compact('categories','child_category'));
     }
 
     /**
@@ -43,7 +48,6 @@ class ProductController extends Controller
      */
     public function store(ProductRequest $request, Product $product)
     {
-//        $product = new Product();
         $product->name = $request->get('name');
         $product->category_id = $request->get('category_id');
         $product->description = $request->get('description');
@@ -82,7 +86,9 @@ class ProductController extends Controller
     {
         $categories = Category::get();
         $images = Image::where('product_id', $product->id)->get();
-        return view('auth.products.form', compact('product', 'categories','images'));
+        $child_category = Category::whereNotNull('category_id')->get();
+
+        return view('auth.products.form', compact('product', 'categories','images','child_category'));
     }
 
     /**

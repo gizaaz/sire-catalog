@@ -26,8 +26,8 @@
                             <tr>
                                 <td>
                                     <a href="{{ route('product', $product) }}">
-                                        <img height="56px"
-                                             src="{{ Storage::url($product->images) }}">
+                                        {{--<img height="56px"--}}
+                                             {{--src="{{ Storage::url($product->images) }}">--}}
                                         {{ $product->name }}
                                     </a>
                                 </td>

@@ -15,6 +15,13 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+//    public function index()
+//    {
+//        $categories = Category::get();
+//        return view('auth.categories.index', compact('categories'));
+//    }
+
+
     public function index()
     {
         $categories = Category::get();
@@ -30,6 +37,30 @@ class CategoryController extends Controller
     {
         return view('auth.categories.form');
     }
+
+
+//    public function childCreate()
+//    {
+//        $categories_not_null = Category::whereNull('category_id')->get();
+//        return view('auth.categories.formchild',compact('categories_not_null'));
+//    }
+
+
+//    public function childStore(CategoryRequest $request, Category $category)
+//    {
+//        $category->name = $request->get('name');
+//        $category->category_id = $request->get('child');
+//
+//        unset($request->images);
+//        if ($request->has('images')) {
+//            $path = $request->images->store('img');
+//            $category->images->save($path);
+//        }
+//        $category->save();
+////        Category::create($params);
+//        return redirect()->route('categories.index');
+//    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -58,7 +89,10 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        return view('auth.categories.show', compact('category'));
+        $child_category = Category::where('category_id', $category->id)
+            ->with('childrenCategories')
+            ->get();
+        return view('auth.categories.show', compact('category', 'child_category'));
     }
 
     /**
@@ -101,6 +135,12 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
+        $child_category = Category::where('category_id', $category->id)
+            ->with('childrenCategories')
+            ->get();
+        foreach ($child_category as $item) {
+            $item->delete();
+        }
         $category->delete();
         return redirect()->route('categories.index');
     }

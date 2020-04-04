@@ -29,6 +29,9 @@ Route::group([
     Route::get('/orders', 'OrderController@index')->name('home');
     Route::get('/orders/{order}', 'OrderController@show')->name('orders.show');
     Route::resource('categories', 'CategoryController');
+    Route::resource('categories/child', 'ChildCategoryController');
+//    Route::get('categories/create/child', 'CategoryController@childCreate')->name('child.create');
+//    Route::post('categories', 'CategoryController@childStore')->name('child.store');
     Route::resource('products', 'ProductController');
     Route::post('product/image/delete','ProductController@deleteImage');
 

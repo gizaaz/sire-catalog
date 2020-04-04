@@ -5,7 +5,6 @@ $("body").on("click", ".remove_img", function () {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
-    console.log($('meta[name="csrf-token"]').attr('content'));
     $.ajax({
         type: 'POST',
         url: '/admin/product/image/delete',
@@ -15,9 +14,3 @@ $("body").on("click", ".remove_img", function () {
         }
     });
 });
-
-
-$("body").on("click", ".close", function () {
-    $(`span`).remove();
-});
-
