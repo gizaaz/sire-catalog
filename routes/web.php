@@ -28,6 +28,7 @@ Route::group([
 ], function(){
     Route::get('/orders', 'OrderController@index')->name('home');
     Route::get('/orders/{order}', 'OrderController@show')->name('orders.show');
+    Route::match(['put', 'patch'],'/orders/{order}', 'OrderController@update')->name('orders.update');
     Route::resource('categories', 'CategoryController');
     Route::resource('categories/child', 'ChildCategoryController');
 //    Route::get('categories/create/child', 'CategoryController@childCreate')->name('child.create');

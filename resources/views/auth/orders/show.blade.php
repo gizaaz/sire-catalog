@@ -32,17 +32,33 @@
                                     </a>
                                 </td>
                                 <td><span class="badge">{{$product->pivot->count}}</span></td>
-                                <td>{{ $product->getPriceForCount()}} currency</td>
-                                <td>{{ $product->price }} currency</td>
+                                <td>{{ $product->getPriceForCount()}} ГРН</td>
+                                <td>{{ $product->price }} ГРН</td>
                             </tr>
                         @endforeach
                         <tr>
                             <td colspan="3"><b>Всього:</b></td>
-                            <td>{{ $order->getFullPrice() }} currency</td>
+                            <td>{{ $order->getFullPrice() }} ГРН</td>
                         </tr>
                         </tbody>
                     </table>
                     <br>
+                    <p><b>Присвоїти статус:</b>
+                    <div class="btn-group" role="group">
+                        <form action="{{ route('orders.update', $order) }}" method="POST">
+                            @csrf
+                            @method('PUT')
+                            <input type="text" style="display: none;" class="form-control" name="status" id="name" value="2">
+                            <input class="btn btn-warning" type="submit" value="Виконується"></form>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <form action="{{ route('orders.update', $order) }}" method="POST">
+                            @csrf
+                            @method('PUT')
+                            <input type="text" style="display: none;" class="form-control" name="status" id="name" value="0">
+                            <input class="btn btn-primary" type="submit" value="Виконано"></form>
+                    </div>
+                    </p>
                 </div>
             </div>
         </div>

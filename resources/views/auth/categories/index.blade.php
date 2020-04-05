@@ -7,9 +7,9 @@
     <div id="exTab" class="container">
         <ul class="nav nav-pills">
             <li class="active">
-                <a href="#1b" data-toggle="tab">Категорія</a>
+                <a href="#1b" data-toggle="tab">Категорії</a>
             </li>
-            <li><a href="#2b" data-toggle="tab">Підкатегорія</a>
+            <li><a href="#2b" data-toggle="tab">Підкатегорії</a>
             </li>
         </ul>
 

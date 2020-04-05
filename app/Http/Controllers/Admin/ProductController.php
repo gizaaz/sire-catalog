@@ -36,7 +36,7 @@ class ProductController extends Controller
 //            ->get();
         $child_category = Category::whereNotNull('category_id')->get();
 //        dd($child_category);
-        return view('auth.products.form', compact('categories','child_category'));
+        return view('auth.products.form', compact('categories', 'child_category'));
     }
 
     /**
@@ -56,7 +56,7 @@ class ProductController extends Controller
         $product->status = $request->get('status');
         $product->save();
 
-        foreach ($request->images as $image){
+        foreach ($request->images as $image) {
             $path = $image->store('img');
             $product->images()->save(new Image(['image' => $path]));
         }
@@ -88,7 +88,7 @@ class ProductController extends Controller
         $images = Image::where('product_id', $product->id)->get();
         $child_category = Category::whereNotNull('category_id')->get();
 
-        return view('auth.products.form', compact('product', 'categories','images','child_category'));
+        return view('auth.products.form', compact('product', 'categories', 'images', 'child_category'));
     }
 
     /**
@@ -99,18 +99,20 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function deleteImage(Request $request){
+    public function deleteImage(Request $request)
+    {
         $image = Image::find($request->id);
         Storage::delete($image->image);
         $image->delete();
         return response('');
     }
+
     public function update(ProductRequest $request, Product $product)
     {
         $params = $request->all();
         unset($params['images']);
         if ($request->has('images')) {
-            foreach ($request->images as $image){
+            foreach ($request->images as $image) {
                 $path = $image->store('img');
                 $product->images()->save(new Image(['image' => $path]));
             }

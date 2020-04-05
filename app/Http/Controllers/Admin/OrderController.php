@@ -25,11 +25,21 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $orders = Order::where('status', 1)->get();
-        return view('auth.orders.index', compact('orders'));
+        $orders = Order::where('status', 1)->orderBy('updated_at', 'desc')->get();
+        $orders_process = Order::where('status', 2)->orderBy('updated_at', 'desc')->get();
+        $orders_offline = Order::where('status', 0)->orderBy('updated_at', 'desc')->get();
+        return view('auth.orders.index', compact('orders', 'orders_offline', 'orders_process'));
     }
 
-    public function show(Order $order){
+    public function show(Order $order)
+    {
         return view('auth.orders.show', compact('order'));
+    }
+
+    public function update(Request $request, Order $order)
+    {
+        $order->status = $request->get('status');
+        $order->update();
+        return redirect()->route('home');
     }
 }

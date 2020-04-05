@@ -31,10 +31,9 @@
                     Дії
                 </th>
             </tr>
-            @foreach($products as $product)
+            @foreach($products as $item=>$product)
                 <tr>
-                    <td>{{ $product->id}}</td>
-                    {{--<td>{{ $product->code }}</td>--}}
+                    <td>{{ ++$item}}</td>
                     <td>{{ $product->name }}</td>
                     <td>
                         @if(isset($product->category->name))
