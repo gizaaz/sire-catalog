@@ -31,8 +31,6 @@ Route::group([
     Route::match(['put', 'patch'],'/orders/{order}', 'OrderController@update')->name('orders.update');
     Route::resource('categories', 'CategoryController');
     Route::resource('categories/child', 'ChildCategoryController');
-//    Route::get('categories/create/child', 'CategoryController@childCreate')->name('child.create');
-//    Route::post('categories', 'CategoryController@childStore')->name('child.store');
     Route::resource('products', 'ProductController');
     Route::post('product/image/delete','ProductController@deleteImage');
 

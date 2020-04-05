@@ -9,9 +9,9 @@
 @section('content')
     <div class="col-md-12">
         @isset($product)
-            <h1>Редактировать товар <b>{{ $product->name }}</b></h1>
+            <h1>Редагувати товар <b>{{ $product->name }}</b></h1>
         @else
-            <h1>Добавить товар</h1>
+            <h1>Добавити товар</h1>
         @endisset
         <form method="POST" enctype="multipart/form-data"
               @isset($product)
@@ -83,7 +83,11 @@
                 </div>
                 <br>
                 <div class="input-group row">
-                    <label for="image" class="col-sm-2 col-form-label">Зображення: </label>
+                    <label for="image" class="col-sm-2 col-form-label">Зображення:<br>
+                    @isset($images)
+                            (Нажміть на зображення щоб видалити його)
+                     @endisset
+                    </label>
                     <div class="col-sm-10">
                         @isset($images)
                             @foreach($images as $image)
