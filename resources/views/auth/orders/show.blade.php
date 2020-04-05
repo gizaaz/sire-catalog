@@ -27,7 +27,7 @@
                                 <td>
                                     <a href="{{ route('product', $product) }}">
                                         {{--<img height="56px"--}}
-                                             {{--src="{{ Storage::url($product->images) }}">--}}
+                                        {{--src="{{ Storage::url($product->images) }}">--}}
                                         {{ $product->name }}
                                     </a>
                                 </td>
@@ -44,21 +44,38 @@
                     </table>
                     <br>
                     <p><b>Присвоїти статус:</b>
-                    <div class="btn-group" role="group">
-                        <form action="{{ route('orders.update', $order) }}" method="POST">
-                            @csrf
-                            @method('PUT')
-                            <input type="text" style="display: none;" class="form-control" name="status" id="name" value="2">
-                            <input class="btn btn-warning" type="submit" value="Виконується"></form>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <form action="{{ route('orders.update', $order) }}" method="POST">
-                            @csrf
-                            @method('PUT')
-                            <input type="text" style="display: none;" class="form-control" name="status" id="name" value="3">
-                            <input class="btn btn-primary" type="submit" value="Виконано"></form>
-                    </div>
-                    </p>
+
+                    @if($order->status != 3)
+                        @if($order->status != 2)
+                            <div class="btn-group" role="group">
+                                <form action="{{ route('orders.update', $order) }}" method="POST">
+                                    @csrf
+                                    @method('PUT')
+                                    <input type="text" style="display: none;" class="form-control" name="status"
+                                           id="name" value="2">
+                                    <input class="btn btn-warning" type="submit" value="В обробці"></form>
+                            </div>
+                        @endif
+                        <div class="btn-group" role="group">
+                            <form action="{{ route('orders.update', $order) }}" method="POST">
+                                @csrf
+                                @method('PUT')
+                                <input type="text" style="display: none;" class="form-control" name="status" id="name"
+                                       value="3">
+                                <input class="btn btn-primary" type="submit" value="Виконано"></form>
+                        </div>
+                    @endif
+                    @if($order->status == 3)
+                        <div class="btn-group" role="group">
+                            <form action="{{ route('orders.update', $order) }}" method="POST">
+                                @csrf
+                                @method('PUT')
+                                <input type="text" style="display: none;" class="form-control" name="status" id="name"
+                                       value="1">
+                                <input class="btn btn-warning" type="submit" value="Відновити замовлення"></form>
+                        </div>
+                        @endif
+                        </p>
                 </div>
             </div>
         </div>

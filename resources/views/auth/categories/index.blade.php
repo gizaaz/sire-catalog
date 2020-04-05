@@ -33,10 +33,10 @@
                                 Дії
                             </th>
                         </tr>
-                        @foreach($categories as $category)
+                        @foreach($categories as $item=>$category)
                             @if(is_null($category->category_id))
                                 <tr>
-                                <td>{{ $category->id }}</td>
+                                <td>{{ ++$item }}</td>
                                 <td>{{ $category->name }} </td>
                                 <td>
                                     <div class="btn-group" role="group">
@@ -76,10 +76,9 @@
                                 Дії
                             </th>
                         </tr>
-                        @foreach($categories as $child)
-                            @if(!is_null($child->category_id))
+                        @foreach($child_categories as $item=>$child)
                                 <tr>
-                                    <td>{{ $child->id }}</td>
+                                    <td>{{ ++$item }}</td>
                                     <td>{{ $child->name }}</td>
                                     <td>
                                         <div class="btn-group" role="group">
@@ -94,7 +93,6 @@
                                         </div>
                                     </td>
                                 </tr>
-                            @endif
                         @endforeach
                         </tbody>
                     </table>

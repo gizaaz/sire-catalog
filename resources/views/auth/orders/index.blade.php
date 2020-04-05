@@ -69,7 +69,7 @@
                                             @csrf
                                             @method('PUT')
                                             <input type="text" style="display: none;" class="form-control" name="status" id="name" value="2">
-                                            <input class="btn btn-warning" type="submit" value="Виконується"></form>
+                                            <input class="btn btn-warning" type="submit" value="В обробці"></form>
                                     </div>
                                     <div class="btn-group" role="group">
                                         <form action="{{ route('orders.update', $order) }}" method="POST">
