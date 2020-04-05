@@ -27,7 +27,7 @@ class OrderController extends Controller
     {
         $orders = Order::where('status', 1)->orderBy('updated_at', 'desc')->get();
         $orders_process = Order::where('status', 2)->orderBy('updated_at', 'desc')->get();
-        $orders_offline = Order::where('status', 0)->orderBy('updated_at', 'desc')->get();
+        $orders_offline = Order::where('status', 3)->orderBy('updated_at', 'desc')->get();
         return view('auth.orders.index', compact('orders', 'orders_offline', 'orders_process'));
     }
 

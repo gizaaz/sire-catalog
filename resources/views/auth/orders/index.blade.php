@@ -75,7 +75,7 @@
                                         <form action="{{ route('orders.update', $order) }}" method="POST">
                                             @csrf
                                             @method('PUT')
-                                            <input type="text" style="display: none;" class="form-control" name="status" id="name" value="0">
+                                            <input type="text" style="display: none;" class="form-control" name="status" id="name" value="3">
                                             <input class="btn btn-primary" type="submit" value="Виконано"></form>
                                     </div>
 
@@ -139,7 +139,7 @@
                                         <form action="{{ route('orders.update', $process) }}" method="POST">
                                             @csrf
                                             @method('PUT')
-                                            <input type="text" style="display: none;" class="form-control" name="status" id="name" value="0">
+                                            <input type="text" style="display: none;" class="form-control" name="status" id="name" value="3">
                                             <input class="btn btn-primary" type="submit" value="Виконано"></form>
                                     </div>
                                 </td>
