@@ -96,9 +96,28 @@
                         <div class="cart-result">
                             <a class="cart-result-back-btn" href="{{route('welcome')}}">Вернуться к покупкам</a>
                             <div class="cart-result-order">
-                                <a href="{{route('basket-place')}}"> <span>Оформить заказ</span></a>
+                                <a class="site-btn site-btn-green-gradient cart-result-order-btn"> <span>Оформить заказ</span></a>
                             </div>
                         </div>
+                    </div>
+                    <div class="cart-order">
+                        <div class="cart-order-header">Оформление заказа</div>
+                        <form class="cart-order-form site-form" id="cart-order-form" action="{{route('basket-confirm')}}" method="POST">
+                            <div class="cart-order-form-input-list">
+                                <input name="user_name" type="text" placeholder="Ваше имя*" required>
+                                <input name="phone" type="tel" placeholder="Телефон*" required>
+                                <input name="email" type="email" placeholder="Email*" required>
+                            </div>
+                            <textarea name="description" placeholder="Комментарий к заказу"></textarea>
+                            <div class="personal-data"><label class="checkbox personal cart"><input type="checkbox"
+                                                                                                    checked required
+                                                                                                    name="agree"/><span
+                                        class="checkbox__text checkbox_agree">Нажимая на кнопку, Вы подтверждаете, что соглашаетесь с &nbsp;</span><a
+                                        href="https://www.estet-doors.ru/pravila-obrabotki-personalnyh-dannyh/"
+                                        target="_blank">Правилами обработки персональных данных</a></label></div>
+                            @csrf
+                            <button type="submit"><a class="cart-order-form-btn site-btn site-btn-green-gradient"> <span>Подтвердить заказ</span></a></button>
+                        </form>
                     </div>
                 </div>
             </div>

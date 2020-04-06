@@ -67,28 +67,21 @@ class BasketController extends Controller
 
     public function basketConfirm(Request $request)
     {
-        dd($request->all());
         $orderId = session('orderId');
         if (is_null($orderId)) {
             return redirect()->route('index');
         }
         $order = Order::find($orderId);
-        $order->user_name = $request->user_name;
-        $order->phone = $request->phone;
-        $order->email = $request->email;
-        $order->descriprion = $request->descriprion;
-        $order->status = 1;
-        $order->save();
-        session()->forget('orderId');
-        //$success = $order->saveOrder($request->user_name, $request->phone, $request->email, $request->description);
+        $success = $order->saveOrder($request->user_name, $request->phone, $request->email, $request->description);
 
-       /* if($success){
+        if($success){
             session()->flash('success','Заказ прийнятий на обробку');
         } else {
             session()->flash('warning','Сталась помилка :(');
 
-        }*/
-        return redirect()->route('index');
+        }
+
+        return redirect()->route('welcome');
     }
 
     public function basketPlace()
