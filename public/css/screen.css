@@ -8486,7 +8486,7 @@ h2, .like-h2, .about-list-item-name {
   .pagination-list li.prev-page {
     left: -22px; } }
 .pagination-list li.prev-page a {
-  background-image: url("/img/pagination-left.svg"); }
+  background-image: url("https://www.estet-doors.ru/img/pagination-left.svg"); }
 .pagination-list li.next-page {
   right: 0; }
 @media screen and (max-width: 64em) {
@@ -15303,13 +15303,13 @@ h1, .like-h1 {
 	.contacts-block-right .wid_inst {
 		margin-top: 60px;
 	}
-} 
+}
 @media screen and (max-width: 768px) {
   .categories-list-item {
     height: auto;
   }
 }
-p  a { color: #22a152; 
+p  a { color: #22a152;
   text-decoration: underline;
 }
 p  a:hover {

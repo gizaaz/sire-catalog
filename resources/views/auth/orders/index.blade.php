@@ -3,18 +3,6 @@
 @section('title', 'Замовлення')
 
 @section('content')
-    <div id="exTab" class="container">
-        <ul  class="nav nav-pills">
-            <li class="active">
-                <a  href="#1b" data-toggle="tab">Нові замовлення</a>
-            </li>
-            <li>
-                <a  href="#2b" data-toggle="tab">В обробці</a>
-            </li>
-            <li><a href="#3b" data-toggle="tab">Виконані замовлення</a>
-            </li>
-        </ul>
-
         <div class="tab-content clearfix">
             <div class="tab-pane active" id="1b">
 
