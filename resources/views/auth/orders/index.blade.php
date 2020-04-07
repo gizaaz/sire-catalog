@@ -15,7 +15,6 @@
             </li>
         </ul>
 
-
         <div class="tab-content clearfix">
             <div class="tab-pane active" id="1b">
 
