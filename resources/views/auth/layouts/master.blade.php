@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Адмін: @yield('title')</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     <!-- Scripts -->
     <script src="/js/app2.js" defer></script>
-
+    <script src="/js/imgremove.js" defer></script>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
+    <link href="/css/fix.css" rel="stylesheet">
     <link href="/css/app2.css" rel="stylesheet">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/fix.css" rel="stylesheet">
 </head>
 <body>
 <div id="app">

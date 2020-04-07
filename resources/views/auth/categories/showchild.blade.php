@@ -1,10 +1,10 @@
 @extends('auth.layouts.master')
 
-@section('title', 'Категорія ' . $category->name)
+@section('title', 'Підкатегорія ' . $child_category->name)
 
 @section('content')
     <div class="col-md-12">
-        <h1>Категорія {{ $category->name }}</h1>
+        <h1>Підкатегорія {{ $child_category->name }}</h1>
         <table class="table">
             <tbody>
             <tr>
@@ -17,40 +17,32 @@
             </tr>
             <tr>
                 <td>ID</td>
-                <td>{{ $category->id }}</td>
+                <td>{{ $child_category->id }}</td>
             </tr>
             {{--<tr>--}}
                 {{--<td>Код</td>--}}
-                {{--<td>{{ $category->code }}</td>--}}
-            {{--</tr>--}}
-            <tr>
-                <td>Назва категорії</td>
-                <td>{{ $category->name }}</td>
-            </tr>
-            {{--<tr>--}}
-                {{--<td>Описание</td>--}}
-                {{--<td>{{ $category->description }}</td>--}}
+                {{--<td>{{ $child_category->code }}</td>--}}
             {{--</tr>--}}
             <tr>
                 <td>Назва підкатегорії</td>
-                <td>
-                @foreach($child_category as $child)
-                {{$child->name}}<br>
-                @endforeach
-                    </td>
+                <td>{{ $child_category->name }}</td>
             </tr>
+            {{--<tr>--}}
+                {{--<td>Описание</td>--}}
+                {{--<td>{{ $child_category->description }}</td>--}}
+            {{--</tr>--}}
             <tr>
                 <td>Зображення</td>
                 <td>
-                    @if(!is_null($category->images))
-                    <img src="{{Storage::url($category->images)}}"
+                    @if(!is_null($child_category->images))
+                    <img src="{{Storage::url($child_category->images)}}"
                          height="240px">
                         @endif
                 </td>
             </tr>
             <tr>
                 <td>Кількість товарів</td>
-                <td>{{ $category->products->count() }}</td>
+                <td>{{ $child_category->products->count() }}</td>
             </tr>
             </tbody>
         </table>

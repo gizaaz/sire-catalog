@@ -17,11 +17,11 @@
             </tr>
             <tr>
                 <td>ID</td>
-                <td>{{ $product->product_id}}</td>
+                <td>{{ $product->id}}</td>
             </tr>
             {{--<tr>--}}
-                {{--<td>Код</td>--}}
-                {{--<td>{{ $product->code }}</td>--}}
+            {{--<td>Код</td>--}}
+            {{--<td>{{ $product->code }}</td>--}}
             {{--</tr>--}}
             <tr>
                 <td>Назва товару</td>
@@ -37,11 +37,13 @@
             </tr>
             <tr>
                 <td>Зображення</td>
-                <td><img src="{{Storage::url($product->images)}}" height="240px"></td>
+                @foreach($images as $image)
+                    <td><img src="{{Storage::url($image['image'])}}" height="240px"></td>
+                @endforeach
             </tr>
             <tr>
                 <td>Категорія</td>
-{{--                <td>{{ $product->category->name }}</td>--}}
+                {{--                <td>{{ $product->category->name }}</td>--}}
                 <td>
                     @if(isset($product->category->name))
                         {{$product->category->name}}
