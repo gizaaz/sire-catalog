@@ -28,6 +28,7 @@ class Order extends Model
             $this->phone = $phone;
             $this->email = $email;
             $this->description = $description;
+            $this->status = 1;
             $this->save();
             session()->forget('orderId');
             return true;
