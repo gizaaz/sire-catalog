@@ -984,23 +984,8 @@
                     </div>
                     @endforeach
                 </div>
-                <span class="goods-btn site-btn site-btn-gray-light" id="show_more">Показать еще</span>
-                <input type="hidden" name="next_page" value="https://www.estet-doors.ru/catalog/?page=2">
             </div>
-            <div class="pagination-block centered-block">
-                {{$products->links()}}
-                <ul class="pagination-list">
-                    <li class="prev-page"><a href="https://www.estet-doors.ru/catalog/"></a></li>
-                    <li class="current-page"><span>1</span></li>
-                    <li><a href="https://www.estet-doors.ru/catalog/?page=2">2</a></li>
-                    <li><a href="https://www.estet-doors.ru/catalog/?page=3">3</a></li>
-                    <li><a href="https://www.estet-doors.ru/catalog/?page=4">4</a></li>
-                    <li><a href="https://www.estet-doors.ru/catalog/?page=5">5</a></li>
-                    <li class="next-page"><a href="https://www.estet-doors.ru/catalog/?page=2"></a></li>
-                    <li><span>...</span></li>
-                    <li><a href="https://www.estet-doors.ru/catalog/?page=18">18</a></li>
-                </ul>
-            </div>
+            {{$products->links('pagination')}}
         </div>
     </div>
 </main>

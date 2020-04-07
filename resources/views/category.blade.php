@@ -906,12 +906,8 @@
                                     </div>
                                 </div>
                                 @endforeach
-                            <div class="pagination-block centered-block">
-                                {{$products->links()}}
                             </div>
-
-                        </div>
-
+                            {{$products->links('pagination')}}
                     </div>
                 </div>
         </main>
