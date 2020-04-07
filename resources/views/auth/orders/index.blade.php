@@ -55,7 +55,7 @@
                     <td>{{ $order->phone}}</td>
                     <td>{{ $order->email}}</td>
                     <td>{{ $order->description}}</td>
-                    <td>{{ $order->created_at->format('H:i d.m.Y')}}</td>
+{{--                    <td>{{ $order->created_at->format('H:i d.m.Y')}}</td>--}}
                     <td>{{ $order->getFullPrice() }} currency</td>
                     <td>
                         <div class="btn-group" role="group">

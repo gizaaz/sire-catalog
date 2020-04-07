@@ -55,6 +55,13 @@
                     </div>
                 </div>
             </div>
+                <div>
+                    <form action="{{route('basket-add', $product->id)}}" method="POST">
+                        <button type="submit" class="btn btn-primary" role="button">В корзину</button>
+                        @csrf
+                    </form>
+                </div>
+
             <div class="card-attention-block centered-block-medium info_allign">
 
             </div>
