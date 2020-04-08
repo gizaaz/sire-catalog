@@ -77,7 +77,8 @@
                         @error('description')
                         <div class="alert alert-danger">{{$message}}</div>
                         @enderror
-                        <textarea name="description" id="description" cols="72"
+                        {{--<textarea class="form-control" id="summary-ckeditor" name="summary-ckeditor"></textarea>--}}
+                        <textarea name="description" id="summary-ckeditor" cols="72"
                                   rows="7">{{old('description' , isset($product) ? $product->description : null)}}</textarea>
                     </div>
                 </div>

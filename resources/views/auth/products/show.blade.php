@@ -19,10 +19,6 @@
                 <td>ID</td>
                 <td>{{ $product->id}}</td>
             </tr>
-            {{--<tr>--}}
-            {{--<td>Код</td>--}}
-            {{--<td>{{ $product->code }}</td>--}}
-            {{--</tr>--}}
             <tr>
                 <td>Назва товару</td>
                 <td>{{ $product->name }}</td>
@@ -33,7 +29,7 @@
             </tr>
             <tr>
                 <td>Опис</td>
-                <td>{{ $product->description }}</td>
+                <td>{!! $product->description !!}</td>
             </tr>
             <tr>
                 <td>Зображення</td>
@@ -43,7 +39,6 @@
             </tr>
             <tr>
                 <td>Категорія</td>
-                {{--                <td>{{ $product->category->name }}</td>--}}
                 <td>
                     @if(isset($product->category->name))
                         {{$product->category->name}}
