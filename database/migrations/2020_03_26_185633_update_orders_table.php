@@ -15,7 +15,6 @@ class UpdateOrdersTable extends Migration
     {
         Schema::table('orders', function (Blueprint $table) {
             $table->integer('status')->default(0)->after('id');
-            $table->timestamps();
         });
     }
 
