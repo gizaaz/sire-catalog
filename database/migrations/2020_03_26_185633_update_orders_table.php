@@ -14,7 +14,7 @@ class UpdateOrdersTable extends Migration
     public function up()
     {
         Schema::table('orders', function (Blueprint $table) {
-            $table->integer('status')->default(1)->after('id');
+            $table->integer('status')->default(0)->after('id');
             $table->timestamps();
         });
     }
