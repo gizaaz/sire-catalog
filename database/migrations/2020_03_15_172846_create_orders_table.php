@@ -20,7 +20,7 @@ class CreateOrdersTable extends Migration
             $table->string("phone")->nullable();
             $table->string("email")->nullable();
             $table->text("description")->nullable();
-            $table->dateTime("created_at")->useCurrent();
+            $table->timestamps();
         });
     }
 
