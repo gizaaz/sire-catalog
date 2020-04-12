@@ -898,16 +898,16 @@
                     <div class="sort-block-quantity sort-block-item">
                         <div class="sort-block-item-title">Показать</div>
                         <div class="sort-block-item-content">
-                            <span value="https://www.estet-doors.ru/catalog/?limit=32" onclick="location = 'https://www.estet-doors.ru/catalog/?limit=32'">32</span>
-                            <span value="https://www.estet-doors.ru/catalog/?limit=40" class="active" onclick="location = 'https://www.estet-doors.ru/catalog/?limit=40'">40</span>
-                            <span value="https://www.estet-doors.ru/catalog/?limit=64" onclick="location = 'https://www.estet-doors.ru/catalog/?limit=64'">64</span>
+                            <span value="https://www.estet-doors.ru/catalog/?limit=32">32</span>
+                            <span value="https://www.estet-doors.ru/catalog/?limit=40" class="active">40</span>
+                            <span value="https://www.estet-doors.ru/catalog/?limit=64">64</span>
                         </div>
                     </div>
                     <div class="sort-block-sorting sort-block-item">
                         <div class="sort-block-item-title">Сортировка:</div>
                         <div class="sort-block-item-content">
                             <div class="sort-block-sorting-item ">
-                                <div class="sort-block-sorting-item-title" onclick="location='https://www.estet-doors.ru/catalog/?sort=pd.name&amp;order=ASC'">По имени</div>
+                                <div class="sort-block-sorting-item-title">По имени</div>
                                 <div class="sort-block-sorting-item-switches">
                                     <label class="asc">
                                         <input type="radio"  name="name-switch" id="asc-name"><span class="fa fa-caret-up"></span>
@@ -918,7 +918,7 @@
                                 </div>
                             </div>
                             <div class="sort-block-sorting-item ">
-                                <div class="sort-block-sorting-item-title" onclick="location='https://www.estet-doors.ru/catalog/?sort=p.price&amp;order=ASC'">По цене</div>
+                                <div class="sort-block-sorting-item-title">По цене</div>
                                 <div class="sort-block-sorting-item-switches">
                                     <label class="asc">
                                         <input type="radio"  name="price-switch" id="asc-price"><span class="fa fa-caret-up"></span>
@@ -929,7 +929,7 @@
                                 </div>
                             </div>
                             <div class="sort-block-sorting-item ">
-                                <div class="sort-block-sorting-item-title" onclick="location='https://www.estet-doors.ru/catalog/?sort=sale&amp;order=ASC'">По размеру скидки</div>
+                                <div class="sort-block-sorting-item-title">По размеру скидки</div>
                                 <div class="sort-block-sorting-item-switches">
                                     <label class="asc">
                                         <input type="radio"  name="sale-switch" id="asc-sale"><span class="fa fa-caret-up"></span>
@@ -940,7 +940,7 @@
                                 </div>
                             </div>
                             <div class="sort-block-sorting-item ">
-                                <div class="sort-block-sorting-item-title" onclick="location='https://www.estet-doors.ru/catalog/?sort=p.viewed&amp;order=ASC'">По популярности</div>
+                                <div class="sort-block-sorting-item-title">По популярности</div>
                                 <div class="sort-block-sorting-item-switches">
                                     <label class="asc">
                                         <input type="radio"  name="popular-switch" id="asc-popular"><span class="fa fa-caret-up"></span>
@@ -955,7 +955,7 @@
                     <div class="sort-block-item sort-block-in_stock">
                         <div class="sort-block-item-content">
                             <label class="site-check">
-                                <input type="checkbox"  onclick="location = 'https://www.estet-doors.ru/catalog/?sort=p.on_stock'" id="only_in_stock" value="1">
+                                <input type="checkbox" id="only_in_stock" value="1">
                                 <span class="custom-check fa fa-check"></span>
                                 <span>Только в наличии</span>
                             </label>
@@ -968,7 +968,7 @@
                     @foreach($products as $product)
                     <div class="goods-item-wrapper">
                         <div class="goods-item">
-                            <div class="goods-item-img"><a href="{{route('product', ['id'=> $product->id])}}"><img src="https://www.estet-doors.ru/image/cache/catalog/images/dveri/alto/alto-1_nk_ral7044-117x234.png" alt=""></a>
+                            <div class="goods-item-img"><a href="{{route('product', ['id'=> $product->id])}}"><img src="@if(isset($product->images[0]->image)){{asset('storage/' . $product->images[0]->image)}}@endif" alt="{{$product->name}}"></a>
                             </div>
                             <div class="goods-item-bottom"><a class="goods-item-title" href="{{route('product', ['id'=> $product->id])}}">{{$product->name}}</a>
                                 <div class="goods-price">
@@ -978,7 +978,12 @@
                                     </div>
                                 </div>
                                 <div class="is_stock"></div>
-                                <a class="goods-item-btn site-btn site-btn-green-gradient" href="{{route('product', ['id'=> $product->id])}}" onclick="cart.add('1468', '1');return false;"> <span>Купить</span></a>
+                                <form action="{{route('basket-add', $product->id)}}" method="POST">
+                                    <button type="submit" role="button">
+                                        <a class="goods-item-btn site-btn site-btn-green-gradient"><span>Купить</span></a>
+                                    </button>
+                                @csrf
+                                </form>
                             </div>
                         </div>
                     </div>

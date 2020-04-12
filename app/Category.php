@@ -22,4 +22,13 @@ class Category extends Model
     {
         return $this->hasMany(Product::class);
     }
+
+    public function children($parent)
+    {
+        $array = Category::where('category_id', $parent)->get();
+        if (isset($array[0])) {
+            return $array;
+        }
+        return null;
+    }
 }

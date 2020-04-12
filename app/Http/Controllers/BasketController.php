@@ -11,7 +11,7 @@ class BasketController extends Controller
 {
     public function index()
     {
-        $category = Category::get();
+        $category = Category::where('category_id', null)->get();
         $orderId= session('orderId');
         if (!is_null($orderId)) {
             $order = Order::findOrFail($orderId);
@@ -86,7 +86,7 @@ class BasketController extends Controller
 
     public function basketPlace()
     {
-        $category = Category::get();
+        $category = Category::where('category_id', null)->get();
         $orderId = session('orderId');
         if (is_null($orderId)) {
             return redirect()->route('index');

@@ -17,7 +17,7 @@
                         <div class="news-list-item-img">
                         </div>
                         <div class="news-list-item-content">
-                            <a class="news-list-item-name" href="https://www.estet-doors.ru/partneram/dileram/">Дилерам</a>
+                            <a class="news-list-item-name" href="">Дилерам</a>
                             <div class="news-list-item-desc">Компания ESTET  предлагает эксклюзивные условия на образцы дверей из складской программы</div>
                         </div>
                     </div>
@@ -25,7 +25,7 @@
                         <div class="news-list-item-img">
                         </div>
                         <div class="news-list-item-content">
-                            <a class="news-list-item-name" href="https://www.estet-doors.ru/partneram/dizajneram/">Дизайнерам и архитекторам</a>
+                            <a class="news-list-item-name" href="">Дизайнерам и архитекторам</a>
                             <div class="news-list-item-desc">Группа компаний ESTET активно сотрудничает с дизайнерами интерьеров, архитекторами</div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                         <div class="news-list-item-img">
                         </div>
                         <div class="news-list-item-content">
-                            <a class="news-list-item-name" href="https://www.estet-doors.ru/partneram/stroitelyam/">Строителям</a>
+                            <a class="news-list-item-name" href="">Строителям</a>
                             <div class="news-list-item-desc">Группа компаний ESTET активно сотрудничает со строительными компаниями и организациями</div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
             </div>
             <div class="partners-wrapper">
                 <div class="partners-left">
-                    <div class="partners-img"><img alt="" src="katalog/view/theme/default/img/partners.jpg" /></div>
+                    <div class="partners-img"><img alt="" src="{{asset('/image/partners.jpg')}}" /></div>
 
                     <div class="partners-text">
                         <div class="partners-text-top">
@@ -81,7 +81,7 @@
                             <p>Региональный склад расположен в Москве, поэтому мы всегда можем отгрузить вам двери в день заказа.</p>
                         </div>
 
-                        <p><a class="partners-btn site-btn site-btn-green-gradient" href="/catalog/"><span class="white-arrow">Каталог продукции</span></a></p>
+                        <p><a class="partners-btn site-btn site-btn-green-gradient" href="{{route('catalog')}}"><span class="white-arrow">Каталог продукции</span></a></p>
 
                         <div class="partners-contacts">
                             <div class="partners-contacts-item partners-contacts-mail"><span>Ваши вопросы и заявки на сотрудничество можете направлять на электронную почту</span><a href="mailto:sn@estet-doors.ru">sn@estet-doors.ru</a></div>

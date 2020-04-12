@@ -5,7 +5,7 @@
     <div class="inner-page">
         <nav aria-label="Вы находитесь здесь:" role="navigation">
             <ul class="breadcrumbs">
-                <li><a href="https://www.estet-doors.ru/">Главная</a></li>
+                <li><a href="{{route('welcome')}}">Главная</a></li>
                 <li><span>Покупателям</span></li>
             </ul>
         </nav>
@@ -23,12 +23,12 @@
                     <div class="buyers-menu-header">На что обратить внимание:</div>
                     <nav>
                         <ul>
-                            <li><a href="https://www.estet-doors.ru/pokupatelyam/akcii/">Акции</a></li>
-                            <li><a href="/pokupatelyam/slovar/v/">Словарь терминов</a></li>
-                            <li><a href="https://www.estet-doors.ru/pokupatelyam/info-doors/">Статьи</a></li>
-                            <li><a href="https://www.estet-doors.ru/pokupatelyam/kak-vybrat-dver/">Как выбрать дверь</a></li>
-                            <li><a href="https://www.estet-doors.ru/pokupatelyam/polezno/">Полезно</a></li>
-                            <li><a href="https://www.estet-doors.ru/pokupatelyam/smotret-video-o-nashem-proizvodstve/">Смотреть видео о нашем производстве</a></li>
+                            <li><a href="">Акции</a></li>
+                            <li><a href="">Словарь терминов</a></li>
+                            <li><a href="">Статьи</a></li>
+                            <li><a href="">Как выбрать дверь</a></li>
+                            <li><a href="">Полезно</a></li>
+                            <li><a href="">Смотреть видео о нашем производстве</a></li>
                         </ul>
                     </nav>
                 </div>
