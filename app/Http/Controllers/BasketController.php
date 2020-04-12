@@ -36,7 +36,7 @@ class BasketController extends Controller
         } else {
             $order->products()->attach($productId);
         }
-        $product = Product::find($productId);
+        $product = Product::with('images')->find($productId);
         session()->flash('success', 'Доданий товар ' . $product->name);
         return redirect()->route('basket');
     }
@@ -58,7 +58,7 @@ class BasketController extends Controller
                 $pivotRow->update();
             }
         }
-        $product = Product::find($productId);
+        $product = Product::with('images')->find($productId);
 
         session()->flash('warning', 'Видалений товар ' . $product->name);
 

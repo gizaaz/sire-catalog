@@ -35,7 +35,7 @@
                                 <div class="cart-table-body">
                                     <div class="cart-tr">
                                         <div class="cart-td cart-td-img">
-                                            <a href="{{route('product', ['id'=> $product->id])}}"><img src="{{asset('storage/' . $product->images)}}" alt="{{$product->name}}"></a>
+                                            <a href="{{route('product', ['id'=> $product->id])}}"><img src="@if(isset($product->images[0]->image)){{asset('storage/' . $product->images[0]->image)}}@endif" alt="{{$product->name}}"></a>
                                         </div>
                                         <div class="cart-td-mobile">
                                             <div class="cart-td cart-td-name">
@@ -105,7 +105,7 @@
                         <form class="cart-order-form site-form" id="cart-order-form" action="{{route('basket-confirm')}}" method="POST">
                             <div class="cart-order-form-input-list">
                                 <input name="user_name" type="text" placeholder="Ваше имя*" required>
-                                <input name="phone" type="tel" placeholder="Телефон*" required>
+                                <input name="phone" type="text" placeholder="Телефон*" required>
                                 <input name="email" type="email" placeholder="Email*" required>
                             </div>
                             <textarea name="description" placeholder="Комментарий к заказу"></textarea>
