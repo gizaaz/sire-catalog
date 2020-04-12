@@ -6329,6 +6329,7 @@ h2, .like-h2, .about-list-item-name {
 
 .header-logo {
   /* padding-left: 22.5%; */
+    margin-left: 20px;
   padding-left: 12%;
   padding-right: 12%;
   margin-bottom: 3.2vh; }
@@ -6891,13 +6892,13 @@ h2, .like-h2, .about-list-item-name {
 .footer-social-icon:last-of-type {
   border-right: 0; }
 .footer-social-icon.fb-icon {
-  background-image: url("/img/fb-icon.png"); }
+  background-image: url("/image/fb-icon.png"); }
 .footer-social-icon.twit-icon {
   background-image: url("/img/twit-icon.png"); }
 .footer-social-icon.vk-icon {
-  background-image: url("/img/vk-icon.png"); }
+  background-image: url("/image/vk-icon.png"); }
 .footer-social-icon.insta-icon {
-  background-image: url("/img/insta-icon.png"); }
+  background-image: url("/image/insta-icon.png"); }
 
 .footer-copyright-top {
   letter-spacing: 0.5px;
@@ -8493,7 +8494,7 @@ h2, .like-h2, .about-list-item-name {
   .pagination-list li.next-page {
     right: -22px; } }
 .pagination-list li.next-page a {
-  background-image: url("/img/pagination-right.svg"); }
+  background-image: url("https://www.estet-doors.ru/img/pagination-right.svg"); }
 .pagination-list li.current-page {
   color: white; }
 .pagination-list li.current-page > span {
@@ -14220,7 +14221,7 @@ input {
   height: 47px;
   border: 1px solid rgba(177, 186, 192, 0.3);
   border-radius: 50%;
-  background-image: url("/img/to-top.png");
+  background-image: url("/image/to-top.png");
   background-position: center;
   cursor: pointer;
   transition: border-color .3s ease; }
