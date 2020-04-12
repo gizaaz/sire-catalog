@@ -11,7 +11,7 @@ class ProductsController extends Controller
 {
     public function index($id)
     {
-        $category = Category::get();
+        $category = Category::where('category_id', null)->get();
         $product = Product::where('id', $id)->get()->first();
         return view('products', compact('category', 'product'));
     }

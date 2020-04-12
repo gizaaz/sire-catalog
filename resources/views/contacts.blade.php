@@ -6,7 +6,7 @@
     <div class="inner-page">
         <nav aria-label="Вы находитесь здесь:" role="navigation">
             <ul class="breadcrumbs">
-                <li><a href="https://www.estet-doors.ru/">Главная</a></li>
+                <li><a href="{{route('welcome')}}">Главная</a></li>
                 <li><span>Контакты</span></li>
             </ul>
         </nav>

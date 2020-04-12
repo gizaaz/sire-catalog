@@ -2,8 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <base href="https://www.estet-doors.ru/" />
-    <title>Магазины межкомнатных дверей - продажа в Москве, купить межкомнатные двери в интернет-магазине официального сайта ESTET</title>
+    <title>Магазины межкомнатных дверей - ArtDoor</title>
     <link rel="shortcut icon" href="/image/catalog/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/image/catalog/favicon-16x16.png" type="image/png" sizes="16x16">
     <link rel="icon" href="/image/catalog/favicon-32x32.png" type="image/png" sizes="32x32">
@@ -35,11 +34,12 @@
     <meta property="og:title" content="Магазины межкомнатных дверей - продажа в Москве, купить межкомнатные двери в интернет-магазине официального сайта ESTET"/>
     <meta property="og:description" content="Магазины межкомнатных дверей ESTET. Производство, доставка и монтаж дверей в Москве. Наш телефон: ☎ +7 (495) 744-02-38"/>
 
-    <meta property="og:image" content="https://www.estet-doors.ru/image/catalog/logo.png"/>
+    <meta property="og:image" content="{{asset('img/logo.png')}}"/>
     <meta property="og:type" content="article"/>
 
     <link rel="stylesheet" href="{{asset('css/screen.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="{{asset('jquery3/jquery-3.2.1.min.js')}}" type="text/javascript"></script>
     <script src="{{asset('js/common.js')}}" type="text/javascript"></script>
@@ -48,6 +48,10 @@
     <script src="{{asset('js/jquery.form.min.js')}}" type="text/javascript"></script>
     <script src="{{asset('js/jquery.maskedinput.min.js')}}" type="text/javascript"></script>
     <script src="{{asset('js/custom.js')}}" type="text/javascript"></script>
+    <script src="{{asset('js/slick.js')}}"></script>
+    <script src="{{asset('js/ui-slider.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script>
+
     <link rel="stylesheet" href="{{asset('cookieAllowAccess/cookieAllowAccess.min.css')}}">
     <script src="{{asset('cookieAllowAccess/cookieAllowAccess.js')}}" type="text/javascript" async></script>
 
@@ -101,14 +105,16 @@
                         <li><a href="{{route('catalog')}}">Каталог товарів</a>
 
                             <ul>
-                                <li><a href="{{route('catalog')}}">Каталог товарів</a>
-
-                                    <ul>
-                                        @foreach($category as $cat)
-                                            <li><a href="{{route('category', ['id'=> $cat->id])}}">{{$cat->name}}</a>
-                                        @endforeach
-                                    </ul>
-                                </li>
+                                @foreach($category as $cat)
+                                    <li><a href="{{route('category', ['id'=> $cat->id])}}">{{$cat->name}}</a>
+                                        @if(!is_null($cat->children($cat->id)))
+                                            <ul>
+                                                @foreach($cat->children($cat->id) as $item)
+                                                    <li><a href="{{route('category', ['id'=> $item->id])}}">{{$item->name}}</a>
+                                                @endforeach
+                                            </ul>
+                                    @endif
+                                @endforeach
                             </ul>
                         </li>
                     </ul>
@@ -146,20 +152,27 @@
     <div class="page-content">
         <div class="mobile_overlay"></div>
         <header class="site-header">
-            <div itemscope itemtype="http://schema.org/Organization" class="site-header-inner"><a itemprop="url" class="header-logo" href="{{route('welcome')}}"><img itemprop="logo" src="https://www.estet-doors.ru/image/catalog/logo.png" alt=""></a>
+            <div itemscope itemtype="http://schema.org/Organization" class="site-header-inner"><a itemprop="url" class="header-logo" href="{{route('welcome')}}"><img itemprop="logo" src="{{asset('image/output-onlinepngtools.png')}}" alt=""></a>
                 <!-- <div class="header-contacts"><a class="header-phone" href="tel:+74952767555">+7 495 276-75-55</a><a class="header-callback" href="#callback-form" data-fancybox>Заказать звонок</a></div> -->
                 <div class="header-menu">
                     <nav class="catalog-menu">
                         <div class="header-contacts-mobile">
                             <a class="header-phone" href="tel:+380503381575">+38 050 338 1575</a>
-                            <a class="header-callback" href="#callback-form" data-fancybox>Замовити дзвінок</a>
+                            <a class="header-callback" href="" data-fancybox>Замовити дзвінок</a>
                         </div>
                         <ul>
                             <li><a href="{{route('catalog')}}">Каталог товарів</a>
 
                                 <ul>
                                     @foreach($category as $cat)
-                                    <li><a href="{{route('category', ['id'=> $cat->id])}}">{{$cat->name}}</a>
+                                        <li><a href="{{route('category', ['id'=> $cat->id])}}">{{$cat->name}}</a>
+                                                @if(!is_null($cat->children($cat->id)))
+                                                    <ul>
+                                                        @foreach($cat->children($cat->id) as $item)
+                                                        <li><a href="{{route('category', ['id'=> $item->id])}}">{{$item->name}}</a>
+                                                        @endforeach
+                                                    </ul>
+                                                @endif
                                     @endforeach
                                 </ul>
                             </li>
@@ -173,18 +186,18 @@
                             <li>
                                 <a href="{{route('about')}}">Про компанію</a>
                                 <ul>
-                                    <li><a href="https://www.estet-doors.ru/about/nashi-preimuschestva/">Наші переваги</a></li>
-                                    <li><a href="https://www.estet-doors.ru/about/o-nas/">Про нас</a></li>
-                                    <li><a href="https://www.estet-doors.ru/about/tehnologii/">Технології</a></li>
-                                    <li><a href="https://www.estet-doors.ru/about/sertifikaty/">Сертифікати</a></li>
+                                    <li><a href="">Наші переваги</a></li>
+                                    <li><a href="">Про нас</a></li>
+                                    <li><a href="">Технології</a></li>
+                                    <li><a href="">Сертифікати</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="{{route('toCustomers')}}">Покупцям</a>
                                 <ul>
-                                    <li><a href="https://www.estet-doors.ru/pokupatelyam/slovar/">Словник термінів</a></li>
-                                    <li><a href="https://www.estet-doors.ru/pokupatelyam/kak-vybrat-dver/">Як вибрати двері</a></li>
-                                    <li><a href="https://www.estet-doors.ru/pokupatelyam/polezno/">Корисно</a></li>
+                                    <li><a href="">Словник термінів</a></li>
+                                    <li><a href="">Як вибрати двері</a></li>
+                                    <li><a href="">Корисно</a></li>
                                 </ul>
                             </li>
                             <li><a href="{{route('contacts')}}">Контакти</a></li>
@@ -192,12 +205,12 @@
                     </nav>
                 </div>
 
-                <a id="header-cart" class="header-order site-btn site-btn-green" href="https://www.estet-doors.ru/cart/">
+                <a id="header-cart" class="header-order site-btn site-btn-green" href="{{route('basket')}}">
                     <div class="basket-block">
                         <div class="basket-block-count">0</div>
                     </div>
                     <div class="header-order-info uppercase_text text_center">
-                        <div class="header-order-summ site-price"><span class="price-val">0</span><span class="price-currency">руб.</span></div>
+                        <div class="header-order-summ site-price"><span class="price-val">0</span><span class="price-currency">грн.</span></div>
                         <div class="header-order-title">Оформити замовлення</div>
                     </div>
                 </a>
@@ -209,24 +222,24 @@
         <script defer src="//www.zamanuh.ru/widget.js?id=32"></script>
         <footer class="site-footer">
             <div class="site-footer-inner">
-                <div class="footer-menu">
-                    <nav>
-                        <div class="footer-menu-header">Виды дверей</div>
-                        <ul class="">
-                            <li><a href="/catalog/mezhkomnatnye-dveri/" class="" >Межкомнатные двери</a></li><li><a href="/catalog/vhodnye-dveri/" class="" >Входные двери</a></li><li><a href="/catalog/mezhkomnatnye-dveri/raspashnye/" class="" >Распашные двери</a></li><li><a href="/catalog/razdvizhnye-dveri/" class="" >Раздвижные двери</a></li><li><a href="/catalog/razdvizhnye-dveri/skladnye/" class="" >Двери складные</a></li><li><a href="/catalog/razdvizhnye-dveri/skrytye/" class="" >Двери скрытые</a></li><li><a href="/catalog/razdvizhnye-dveri/sdvizhnye/" class="" >Двери сдвижные</a></li><li><a href="/catalog/razdvizhnye-dveri/roto/" class="" >Двери Рото</a></li><li><a href="/catalog/razdvizhnye-dveri/dveri-kupe/" class="" >Двери купе</a></li><li><a href="/catalog/razdvizhnye-dveri/knizhka/" class="" >Двери книжкой</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dvustvorchatye/" class="" >Двустворчатые двери</a></li></ul>        </nav>
-                    <nav>
-                        <div class="footer-menu-header">По цвету</div>
-                        <ul class="">
-                            <li><a href="/catalog/mezhkomnatnye-dveri/dveri-po-cvetu/belye/" class="" >Двери белые</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dveri-po-cvetu/cvetnye-dveri/" class="" >Двери цветные</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dveri-po-cvetu/venge/" class="" >Двери венге</a></li></ul>        </nav>
-                    <nav>
-                        <div class="footer-menu-header">По назначению</div>
-                        <ul class="">
-                            <li><a href="/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dlya-kuhni/" class="" >Двери для кухни</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dlya-tualeta/" class="" >Двери для туалета</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dlya-vannoj/" class="" >Двери для ванной</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dlya-garderobnoj/" class="" >Двери для гардероба</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/so-steklom/" class="" >Двери со стеклом</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dveri-s-zerkalom/" class="" >Двери с зеркалом</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/gluhie/" class="" >Двери глухие</a></li></ul>        </nav>
-                    <nav>
-                        <div class="footer-menu-header">Другое</div>
-                        <ul class="">
-                            <li><a href="/catalog/vidy-stekol/" class="" >Виды стекол</a></li><li><a href="/cvetovaya-gamma/" class="" >Цветовая гамма</a></li><li><a href="/catalog/dekorativnoe-oformlenie/" class="" >Декоративное оформление</a></li><li><a href="/catalog/furnitura/" class="" >Фурнитура</a></li><li><a href="/catalog/pogonazhnye-izdeliya/" class="" >Погонаж и плинтуса</a></li></ul>        </nav>
-                </div>
+{{--                <div class="footer-menu">--}}
+{{--                    <nav>--}}
+{{--                        <div class="footer-menu-header">Виды дверей</div>--}}
+{{--                        <ul class="">--}}
+{{--                            <li><a href="" class="" >Межкомнатные двери</a></li><li><a href="" class="" >Входные двери</a></li><li><a href="/catalog/mezhkomnatnye-dveri/raspashnye/" class="" >Распашные двери</a></li><li><a href="/catalog/razdvizhnye-dveri/" class="" >Раздвижные двери</a></li><li><a href="/catalog/razdvizhnye-dveri/skladnye/" class="" >Двери складные</a></li><li><a href="/catalog/razdvizhnye-dveri/skrytye/" class="" >Двери скрытые</a></li><li><a href="/catalog/razdvizhnye-dveri/sdvizhnye/" class="" >Двери сдвижные</a></li><li><a href="/catalog/razdvizhnye-dveri/roto/" class="" >Двери Рото</a></li><li><a href="/catalog/razdvizhnye-dveri/dveri-kupe/" class="" >Двери купе</a></li><li><a href="/catalog/razdvizhnye-dveri/knizhka/" class="" >Двери книжкой</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dvustvorchatye/" class="" >Двустворчатые двери</a></li></ul>        </nav>--}}
+{{--                    <nav>--}}
+{{--                        <div class="footer-menu-header">По цвету</div>--}}
+{{--                        <ul class="">--}}
+{{--                            <li><a href="/catalog/mezhkomnatnye-dveri/dveri-po-cvetu/belye/" class="" >Двери белые</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dveri-po-cvetu/cvetnye-dveri/" class="" >Двери цветные</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dveri-po-cvetu/venge/" class="" >Двери венге</a></li></ul>        </nav>--}}
+{{--                    <nav>--}}
+{{--                        <div class="footer-menu-header">По назначению</div>--}}
+{{--                        <ul class="">--}}
+{{--                            <li><a href="/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dlya-kuhni/" class="" >Двери для кухни</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dlya-tualeta/" class="" >Двери для туалета</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dlya-vannoj/" class="" >Двери для ванной</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dlya-garderobnoj/" class="" >Двери для гардероба</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/so-steklom/" class="" >Двери со стеклом</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/dveri-s-zerkalom/" class="" >Двери с зеркалом</a></li><li><a href="/catalog/mezhkomnatnye-dveri/dveri-dlya-kvartiry/gluhie/" class="" >Двери глухие</a></li></ul>        </nav>--}}
+{{--                    <nav>--}}
+{{--                        <div class="footer-menu-header">Другое</div>--}}
+{{--                        <ul class="">--}}
+{{--                            <li><a href="/catalog/vidy-stekol/" class="" >Виды стекол</a></li><li><a href="/cvetovaya-gamma/" class="" >Цветовая гамма</a></li><li><a href="/catalog/dekorativnoe-oformlenie/" class="" >Декоративное оформление</a></li><li><a href="/catalog/furnitura/" class="" >Фурнитура</a></li><li><a href="/catalog/pogonazhnye-izdeliya/" class="" >Погонаж и плинтуса</a></li></ul>        </nav>--}}
+{{--                </div>--}}
                 <div class="footer-left-block">
                     <div class="footer-social">
                         <div class="footer-social-title">Мы в социальных сетях:</div>
@@ -476,13 +489,10 @@
         });
 
     });
-</script><script src="katalog/view/theme/default/assets/js/foundation.min.js"></script>
-<script src="katalog/view/theme/default/assets/js/jquery.mCustomScrollbar.js"></script>
-<script src="katalog/view/theme/default/assets/js/slick.js"></script>
-<script src="katalog/view/theme/default/assets/js/ui-slider.js"></script>
-<script src="katalog/view/theme/default/assets/js/jquery.ui.touch-punch.min.js"></script>
-<script src="katalog/view/theme/default/assets/js/jquery.fancybox.min.js"></script>
-<script src="katalog/view/theme/default/assets/js/main.js?v=2"></script>
+</script><script src="{{asset('js/foundation.min.js')}}"></script>
+<script src="{{asset('js/jquery.mCustomScrollbar.js')}}"></script>
+<script src="{{asset('js/jquery.ui.touch-punch.min.js')}}"></script>
+<script src="{{asset('js/jquery.fancybox.min.js')}}"></script>
 <div class="feedback-block"></div>
 <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>

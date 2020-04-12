@@ -5,7 +5,7 @@
     <div class="inner-page">
         <nav aria-label="Вы находитесь здесь:" role="navigation">
             <ul class="breadcrumbs">
-                <li><a href="https://www.estet-doors.ru/">Главная</a></li>
+                <li><a href="{{route('welcome')}}">Главная</a></li>
                 <li><span>Услуги</span></li>
             </ul>
         </nav>
@@ -13,7 +13,7 @@
         <div class="centered-block">
             <div class="services-list">
                 <div class="about-list-item">
-                    <div class="about-list-item-img"><a href="https://www.estet-doors.ru/uslugi/garantiya/"><img src="https://www.estet-doors.ru/image/cache/catalog/other/service_icon/300858-54x47.png" alt="Гарантия"></a></div><a class="about-list-item-name" href="https://www.estet-doors.ru/uslugi/garantiya/">Гарантия</a>
+                    <div class="about-list-item-img"><a href=""><img src="https://www.estet-doors.ru/image/cache/catalog/other/service_icon/300858-54x47.png" alt="Гарантия"></a></div><a class="about-list-item-name" href="https://www.estet-doors.ru/uslugi/garantiya/">Гарантия</a>
                     <div class="about-list-item-desc">Автоматически компания ESTET предоставляет гарантию на срок 5 лет при любой покупке. И не только на свою продукцию, но и на фурнитуру.</div>
                     <div class="about-list-item-bottom">
 
@@ -22,7 +22,7 @@
                         </div>
 
                     </div>
-                    <a href="https://www.estet-doors.ru/uslugi/garantiya/" class="card-options-result-cart-btn site-btn site-btn-green-gradient">Подробнее</a>
+                    <a href="" class="card-options-result-cart-btn site-btn site-btn-green-gradient">Подробнее</a>
                 </div>
                 <div class="about-list-item">
                     <div class="about-list-item-img"><a href="https://www.estet-doors.ru/uslugi/dostavka/"><img src="https://www.estet-doors.ru/image/cache/catalog/other/service_icon/serv1-54x47.png" alt="Доставка"></a></div><a class="about-list-item-name" href="https://www.estet-doors.ru/uslugi/dostavka/">Доставка</a>
@@ -34,7 +34,7 @@
 
 
                     </div>
-                    <a href="#delivery" class="card-options-result-cart-btn site-btn site-btn-green-gradient" data-fancybox>Заказать</a>
+                    <a href="" class="card-options-result-cart-btn site-btn site-btn-green-gradient" data-fancybox>Заказать</a>
                 </div>
                 <div class="about-list-item">
                     <div class="about-list-item-img"><a href="https://www.estet-doors.ru/uslugi/vyzov-menedzhera-na-dom/"><img src="https://www.estet-doors.ru/image/cache/catalog/other/service_icon/serv3-54x47.png" alt="Вызов менеджера на дом"></a></div><a class="about-list-item-name" href="https://www.estet-doors.ru/uslugi/vyzov-menedzhera-na-dom/">Вызов менеджера на дом</a>
@@ -46,7 +46,7 @@
 
 
                     </div>
-                    <a href="#installation" class="card-options-result-cart-btn site-btn site-btn-green-gradient" data-fancybox>Заказать</a>
+                    <a href="" class="card-options-result-cart-btn site-btn site-btn-green-gradient" data-fancybox>Заказать</a>
                 </div>
                 <div class="about-list-item">
                     <div class="about-list-item-img"><a href="https://www.estet-doors.ru/uslugi/vyzov-zamerschika/"><img src="https://www.estet-doors.ru/image/cache/catalog/other/service_icon/serv2-54x47.png" alt="Вызов замерщика"></a></div><a class="about-list-item-name" href="https://www.estet-doors.ru/uslugi/vyzov-zamerschika/">Вызов замерщика</a>
@@ -58,7 +58,7 @@
 
 
                     </div>
-                    <a href="#installation" class="card-options-result-cart-btn site-btn site-btn-green-gradient" data-fancybox>Заказать</a>
+                    <a href="" class="card-options-result-cart-btn site-btn site-btn-green-gradient" data-fancybox>Заказать</a>
                 </div>
                 <div class="about-list-item">
                     <div class="about-list-item-img"><a href="https://www.estet-doors.ru/uslugi/ustanovka-dverej/"><img src="https://www.estet-doors.ru/image/cache/catalog/other/service_icon/serv4-54x47.png" alt="Установка"></a></div><a class="about-list-item-name" href="https://www.estet-doors.ru/uslugi/ustanovka-dverej/">Установка</a>
@@ -70,12 +70,12 @@
 
 
                     </div>
-                    <a href="#installation" class="card-options-result-cart-btn site-btn site-btn-green-gradient" data-fancybox>Заказать</a>
+                    <a href="" class="card-options-result-cart-btn site-btn site-btn-green-gradient" data-fancybox>Заказать</a>
                 </div>
             </div>
             <div class="connect-form-block">
                 <div class="connect-form-header">Связаться с нами</div>
-                <form class="connect-form site-form" id="connect-form" action="https://www.estet-doors.ru/index.php?route=form/feedback/mail">
+                <form class="connect-form site-form" id="connect-form">
                     <input type="hidden" name="current_url" value="https://www.estet-doors.ru/uslugi/">
                     <div class="connect-form-top">
                         <div class="connect-form-inputs">
@@ -95,7 +95,7 @@
                                 <a href="https://www.estet-doors.ru/pravila-obrabotki-personalnyh-dannyh/" target="_blank">Правилами обработки персональных данных</a>
                             </label>
                         </div>
-                        <a class="connect-form-btn site-btn site-btn-green-gradient" href="#send">
+                        <a class="connect-form-btn site-btn site-btn-green-gradient">
                             <span class="white-arrow">Отправить</span>
                         </a>
                     </div>

@@ -10,9 +10,9 @@ class CategoryController extends Controller
 {
     public function index($id)
     {
-        $category = Category::get();
+        $category = Category::where('category_id', null)->get();
         $categor = Category::where('id', $id)->get()->first();
-        $products = Product::where('category_id', $id)->paginate(1);
+        $products = Product::with('images')->where('category_id', $id)->paginate(40);
         return view('category', compact('category', 'categor', 'products'));
     }
 }

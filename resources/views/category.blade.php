@@ -7,10 +7,10 @@
                     <ul class="breadcrumbs">
                         <li><a href="{{route('welcome')}}">Головна</a></li>
                         <li><a href="{{route('catalog')}}">Каталог дверей</a></li>
-                        <li><span>{{$categor->category_name}}</span></li>
+                        <li><span>{{$categor->name}}</span></li>
                     </ul>
                 </nav>
-                <h1>{{$categor->category_name}}</h1>
+                <h1>{{$categor->name}}</h1>
 
 
 
@@ -819,16 +819,16 @@
                                 <div class="sort-block-quantity sort-block-item">
                                     <div class="sort-block-item-title">Показать</div>
                                     <div class="sort-block-item-content selected_view">
-                                        <span value="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/?limit=32" onclick="location = 'https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/?limit=32'">32</span>
-                                        <span value="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/?limit=40" class="active" onclick="location = 'https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/?limit=40'">40</span>
-                                        <span value="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/?limit=64" onclick="location = 'https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/?limit=64'">64</span>
+                                        <span value="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/?limit=32">32</span>
+                                        <span value="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/?limit=40" class="active">40</span>
+                                        <span value="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/?limit=64">64</span>
                                     </div>
                                 </div>
                                 <div class="sort-block-sorting sort-block-item">
                                     <div class="sort-block-item-title">Сортировка:</div>
                                     <div class="sort-block-item-content selected_sort">
                                         <div class="sort-block-sorting-item ">
-                                            <div class="sort-block-sorting-item-title" onclick="location='https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/?sort=pd.name&amp;order=ASC'">По имени</div>
+                                            <div class="sort-block-sorting-item-title">По имени</div>
                                             <div class="sort-block-sorting-item-switches">
                                                 <label class="asc">
                                                     <input type="radio"  name="name-switch" id="asc-name"><span class="fa fa-caret-up"></span>
@@ -839,7 +839,7 @@
                                             </div>
                                         </div>
                                         <div class="sort-block-sorting-item ">
-                                            <div class="sort-block-sorting-item-title" onclick="location='https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/?sort=p.price&amp;order=ASC'">По цене</div>
+                                            <div class="sort-block-sorting-item-title">По цене</div>
                                             <div class="sort-block-sorting-item-switches">
                                                 <label class="asc">
                                                     <input type="radio"  name="price-switch" id="asc-price"><span class="fa fa-caret-up"></span>
@@ -850,7 +850,7 @@
                                             </div>
                                         </div>
                                         <div class="sort-block-sorting-item ">
-                                            <div class="sort-block-sorting-item-title" onclick="location='https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/?sort=sale&amp;order=ASC'">По размеру скидки</div>
+                                            <div class="sort-block-sorting-item-title">По размеру скидки</div>
                                             <div class="sort-block-sorting-item-switches">
                                                 <label class="asc">
                                                     <input type="radio"  name="sale-switch" id="asc-sale"><span class="fa fa-caret-up"></span>
@@ -861,7 +861,7 @@
                                             </div>
                                         </div>
                                         <div class="sort-block-sorting-item ">
-                                            <div class="sort-block-sorting-item-title" onclick="location='https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/?sort=p.viewed&amp;order=ASC'">По популярности</div>
+                                            <div class="sort-block-sorting-item-title">По популярности</div>
                                             <div class="sort-block-sorting-item-switches">
                                                 <label class="asc">
                                                     <input type="radio"  name="popular-switch" id="asc-popular"><span class="fa fa-caret-up"></span>
@@ -876,7 +876,7 @@
                                 <div class="sort-block-item sort-block-in_stock">
                                     <div class="selected_checkbox">
                                         <label class="site-check">
-                                            <input type="checkbox"  onclick="location = 'https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/?sort=p.on_stock'" id="only_in_stock" value="1">
+                                            <input type="checkbox" id="only_in_stock" value="1">
                                             <span class="custom-check fa fa-check"></span>
                                             <span>Только в наличии</span>
                                         </label>
@@ -891,7 +891,8 @@
                                 @foreach($products as $product)
                                 <div class="goods-item-wrapper">
                                     <div class="goods-item">
-                                        <div class="goods-item-img"><a href="{{route('product', ['id'=> $product->id])}}"><img src="https://www.estet-doors.ru/image/cache/catalog/category/brussel/brussel_br5-x_nf_jasen-grau-117x234.png" alt="Межкомнатная дверь BR5X"></a>
+                                        <div class="goods-item-img"><a href="{{route('product', ['id'=> $product->id])}}">
+                                                <img src="@if(isset($product->images[0]->image)){{asset('storage/' . $product->images[0]->image)}}@endif" alt="{{$product->name}}"></a>
                                         </div>
                                         <div class="goods-item-bottom"><a class="goods-item-title" href="{{route('product', ['id'=> $product->id])}}">{{$product->name}}</a>
                                             <div class="goods-price">
@@ -901,7 +902,12 @@
                                                 </div>
                                             </div>
                                             <div class="is_stock"></div>
-                                            <a class="goods-item-btn site-btn site-btn-green-gradient" href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/kollekciya/brussel/br5x/" onclick="cart.add('1285', '1');return false;"> <span>Купить</span></a>
+                                            <form action="{{route('basket-add', $product->id)}}" method="POST">
+                                                <button type="submit" role="button">
+                                                    <a class="goods-item-btn site-btn site-btn-green-gradient"><span>Купить</span></a>
+                                                </button>
+                                                @csrf
+                                            </form>
                                         </div>
                                     </div>
                                 </div>

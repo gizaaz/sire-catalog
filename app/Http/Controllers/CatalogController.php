@@ -11,8 +11,8 @@ class CatalogController extends Controller
 {
     public function index()
     {
-        $category = Category::get();
-        $products = Product::paginate(1);
+        $category = Category::where('category_id', null)->get();
+        $products = Product::with('images')->paginate(40);
         return view('catalog', compact('category', 'products'));
     }
 }
