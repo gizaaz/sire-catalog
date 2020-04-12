@@ -16,21 +16,21 @@
                 <div class="card-slider-wrapper">
                     <div class="card-slider-for" id="product_images">
                         <div>
-                            <a class="card-slider-item" href="https://www.estet-doors.ru/image/cache/catalog/images/dveri/royal/royal-r6_n_keramik_steklo-lacobel-chernoe-500x500.png" data-fancybox="gallery">
+                            <a class="card-slider-item" href="@if(isset($product->images[0]->image)){{asset('storage/' . $product->images[0]->image)}}@endif" data-fancybox="gallery">
                                 <div class="card-slider-item-zoom"></div>
-                                <img src="https://www.estet-doors.ru/image/cache/catalog/images/dveri/royal/royal-r6_n_keramik_steklo-lacobel-chernoe-500x500.png" alt="Межкомнатная дверь R6 Керамик">
+                                <img src="@if(isset($product->images[0]->image)){{asset('storage/' . $product->images[0]->image)}}@endif" alt="{{$product->name}}">
                             </a>
                         </div>
                     </div>
-                    <div class="card-slider-nav">
-                        <div>
-                            @foreach($product->images as $images)
-                            <div class="card-slider-item">
-                                <img src="@if(isset($images->image)){{asset('storage/' . $images->image)}}@endif" alt="Межкомнатная дверь R6 Керамик">
-                            </div>
-                            @endforeach
-                        </div>
-                    </div>
+{{--                    <div class="card-slider-nav">--}}
+{{--                        <div>--}}
+{{--                            @foreach($product->images as $images)--}}
+{{--                            <div class="card-slider-item">--}}
+{{--                                <img src="@if(isset($images->image)){{asset('storage/' . $images->image)}}@endif" alt="Межкомнатная дверь R6 Керамик">--}}
+{{--                            </div>--}}
+{{--                            @endforeach--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                 </div>
 
 
