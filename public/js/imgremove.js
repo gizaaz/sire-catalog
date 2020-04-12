@@ -1,6 +1,6 @@
 $("body").on("click", ".remove_img", function () {
     var result = confirm("Видалити зображення?");
-    if(result){
+    if (result) {
         var id = ($(this).attr("data-id"));
         $.ajaxSetup({
             headers: {
@@ -17,3 +17,12 @@ $("body").on("click", ".remove_img", function () {
         });
     }
 });
+
+function destroy() {
+    var result = confirm("Дійсно видалити?");
+    if (result) {
+        return true;
+    } else {
+        return false;
+    }
+}

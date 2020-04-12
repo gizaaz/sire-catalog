@@ -38,15 +38,22 @@
                 </div>
                 <br>
                 <div class="input-group row">
-                    <label for="image" class="col-sm-2 col-form-label">Зображення: <br>(Для видалення поточного зображення завантажте нове)</label>
+                    <label for="image" class="col-sm-2 col-form-label">Зображення:
+                        @isset($category)
+                            <br>(Для видалення поточного зображення завантажте нове)
+                        @endisset
+                    </label>
                     <div class="col-sm-10">
                         @isset($category)
                             <td><img src="{{Storage::url($category->images)}}"
                                      height="140px"></td>
-                        @endisset
+                            {{--@endisset--}}
+                            {{--@isset($category)--}}
                             <input type="file" name="images" id="image">Виберіть зображення
+                        @else
+                            <input type="file" required name="images" id="image">Виберіть зображення
+                        @endisset
                     </div>
-
                 </div>
                 <button class="btn btn-success">Зберегти</button>
             </div>

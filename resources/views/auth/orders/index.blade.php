@@ -20,7 +20,7 @@
 
                 <div class="col-md-12">
                     <h1>Нові замовлення</h1>
-                    <table class="table">
+                    <table class="table table-striped">
                         <tbody>
                         <tr>
                             <th>
@@ -54,7 +54,6 @@
                                 <td>{{ $order->user_name}}</td>
                                 <td>{{ $order->phone}}</td>
                                 <td>{{ $order->email}}</td>
-                                {{--<td>{{ $order->description}}</td>--}}
                                 <td>{{ $order->created_at->format('H:i d.m.Y')}}</td>
                                 <td>{{ $order->getFullPrice() }} ГРН</td>
                                 <td>
@@ -92,7 +91,7 @@
             <div class="tab-pane" id="2b">
                 <div class="col-md-12">
                     <h1>Замовлення в обробці</h1>
-                    <table class="table">
+                    <table class="table table-striped">
                         <tbody>
                         <tr>
                             <th>
@@ -154,7 +153,7 @@
             <div class="tab-pane" id="3b">
                 <div class="col-md-12">
                     <h1>Виконані замовлення</h1>
-                    <table class="table">
+                    <table class="table table-striped">
                         <tbody>
                         <tr>
                             <th>

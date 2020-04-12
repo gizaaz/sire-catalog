@@ -38,30 +38,36 @@
                     </div>
                 </div>
                 <br>
-                    <div class="input-group row">
-                        <label for="child" class="col-sm-2 col-form-label">Категорія: </label>
-                        <div class="col-sm-6">
-                            <select name="child" id="child" class="form-control">
-                            @foreach($parent_categories as $category)
-                                    <option value="{{$category->id}}"
-                                            @isset($child_category)
-                                            @if($child_category->category_id == $category->id)
-                                            selected
-                                        @endif
-                                        @endisset
-                                    >{{$category->name}}</option>
-
-
-                                @endforeach
-                            </select>
-                        </div>
-                    </div>
-                    <br>
                 <div class="input-group row">
-                    <label for="image" class="col-sm-2 col-form-label">Зображення: </label>
+                    <label for="child" class="col-sm-2 col-form-label">Категорія: </label>
+                    <div class="col-sm-6">
+                        <select name="child" id="child" class="form-control">
+                            @foreach($parent_categories as $category)
+                                <option value="{{$category->id}}"
+                                        @isset($child_category)
+                                        @if($child_category->category_id == $category->id)
+                                        selected
+                                    @endif
+                                    @endisset
+                                >{{$category->name}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="input-group row">
+                    <label for="image" class="col-sm-2 col-form-label">Зображення:
+                        @isset($child_category)
+                            <br>(Для видалення поточного зображення завантажте нове)
+                        @endisset
+                    </label>
                     <br>
                     <div class="col-sm-10">
+                        @isset($child_category)
                             <input type="file" name="images" id="image">Виберіть зображення
+                        @else
+                            <input type="file" required name="images" id="image">Виберіть зображення
+                        @endisset
                     </div>
                 </div>
                 <button class="btn btn-success">Зберегти</button>
