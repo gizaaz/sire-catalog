@@ -24,6 +24,16 @@
                 <td>{{ $product->name }}</td>
             </tr>
             <tr>
+                <td>Категорія</td>
+                <td>
+                    @if(isset($product->category->name))
+                        {{$product->category->name}}
+                    @else
+                        <span style="color: red; font-weight: bold;"> КАТЕГОРІЮ НЕ ЗНАЙДЕНО</span>
+                    @endif
+                </td>
+            </tr>
+            <tr>
                 <td>Ціна</td>
                 <td>{{ $product->price }}</td>
             </tr>
@@ -32,20 +42,10 @@
                 <td>{!! $product->description !!}</td>
             </tr>
             <tr>
-                <td>Зображення</td>
-                @foreach($images as $image)
-                    <td><img src="{{Storage::url($image['image'])}}" height="240px"></td>
-                @endforeach
-            </tr>
-            <tr>
-                <td>Категорія</td>
-                <td>
-                    @if(isset($product->category->name))
-                        {{$product->category->name}}
-                    @else
-                        <span style="color: red"> КАТЕГОРІЮ НЕ ЗНАЙДЕНО</span>
-                    @endif
-                </td>
+            <td>Зображення</td>
+            @foreach($images as $image)
+                <td><img src="{{Storage::url($image['image'])}}" height="240px"></td>
+            @endforeach
             </tr>
             </tbody>
         </table>

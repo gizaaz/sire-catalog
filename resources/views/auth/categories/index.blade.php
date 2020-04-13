@@ -20,7 +20,7 @@
                     <h1>Категорії</h1>
                     <a class="btn btn-success custom-fix" type="button" href="{{ route('categories.create') }}">Створити
                         категорію</a>
-                    <table class="table">
+                    <table class="table table-striped">
                         <tbody>
                         <tr>
                             <th>
@@ -47,7 +47,7 @@
                                                href="{{ route('categories.edit', $category) }}">Редагувати</a>
                                             @csrf
                                             @method('DELETE')
-                                            <input class="btn btn-danger" type="submit" value="Видалити"></form>
+                                            <button class="btn btn-danger" type="submit" value="Видалити" onclick="return destroy();">Видалити</button></form>
                                     </div>
                                 </td>
                             </tr>
@@ -63,7 +63,7 @@
                     <h1>Підкатегорії</h1>
                     <a class="btn btn-success custom-fix" type="button" href="{{ route('child.create') }}">Створити
                     підкатегорію</a>
-                    <table class="table">
+                    <table class="table table-striped">
                         <tbody>
                         <tr>
                             <th>
@@ -89,7 +89,8 @@
                                                    href="{{ route('child.edit', $child) }}">Редагувати</a>
                                                 @csrf
                                                 @method('DELETE')
-                                                <input class="btn btn-danger" type="submit" value="Видалити"></form>
+                                                <button class="btn btn-danger" type="submit" value="Видалити" onclick="return destroy();">Видалити</button>
+                                            </form>
                                         </div>
                                     </td>
                                 </tr>

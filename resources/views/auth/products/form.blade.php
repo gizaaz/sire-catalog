@@ -52,18 +52,18 @@
                                     >{{$category->name}}</option>
                                 @endif
 
-                            @foreach($child_category as $child)
-                                        @if($child->category_id == $category->id)
-                                    <option value="{{$child->id}}"
-                                            @isset($product)
-                                            @if($product->category_id == $child->id)
-                                            selected
-                                        @endif
-                                        @endisset
-                                    >- {{$child->name}}</option>
-                                        @endif
+                                @foreach($child_category as $child)
+                                    @if($child->category_id == $category->id)
+                                        <option value="{{$child->id}}"
+                                                @isset($product)
+                                                @if($product->category_id == $child->id)
+                                                selected
+                                            @endif
+                                            @endisset
+                                        >- {{$child->name}}</option>
+                                    @endif
 
-                                    @endforeach
+                                @endforeach
 
                             @endforeach
 
@@ -85,9 +85,9 @@
                 <br>
                 <div class="input-group row">
                     <label for="image" class="col-sm-2 col-form-label">Зображення:<br>
-                    @isset($images)
+                        @isset($images)
                             (Нажміть на зображення щоб видалити його)
-                     @endisset
+                        @endisset
                     </label>
                     <div class="col-sm-10">
                         @isset($images)
@@ -96,7 +96,12 @@
                                          height="140px" data-id="{{$image['id']}}"></td>
                             @endforeach
                         @endisset
-                        <input type="file" multiple name="images[]" id="image">Виберіть одне або декілька зображень
+                        @isset($product)
+                            <input type="file" multiple name="images[]" id="image">Виберіть одне або декілька зображень
+                        @else
+                            <input type="file" multiple required name="images[]" id="image">Виберіть одне або декілька
+                            зображень
+                        @endisset
                     </div>
                 </div>
                 <br>

@@ -6,15 +6,12 @@
     <div class="col-md-12">
         <h1>Товари</h1>
         <a class="btn btn-success custom-fix" type="button" href="{{ route('products.create') }}">Добавити товар</a>
-        <table class="table">
+        <table class="table table-striped">
             <tbody>
             <tr>
                 <th>
                     #
                 </th>
-                {{--<th>--}}
-                    {{--Код--}}
-                {{--</th>--}}
                 <th>
                     Назва товару
                 </th>
@@ -39,10 +36,9 @@
                         @if(isset($product->category->name))
                             {{$product->category->name}}
                         @else
-                            <span style="color: red"> КАТЕГОРІЮ НЕ ЗНАЙДЕНО</span>
+                            <span style="color: red; font-weight: bold"> КАТЕГОРІЮ НЕ ЗНАЙДЕНО</span>
                         @endif
                     </td>
-                    {{--<td>{{ $product->category->name }}</td>--}}
                     <td>{{ $product->price }} {{ $product->currency }}</td>
                     <td>
                         @if($product->status == 1)
@@ -60,7 +56,8 @@
                                    href="{{ route('products.edit', $product) }}">Редагувати</a>
                                 @csrf
                                 @method('DELETE')
-                                <input class="btn btn-danger" type="submit" value="Видалити"></form>
+                                <button class="btn btn-danger" type="submit" value="Видалити" onclick="return destroy();">Видалити</button>
+                            </form>
                         </div>
                     </td>
                 </tr>
