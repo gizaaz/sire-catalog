@@ -7,10 +7,10 @@
             <nav aria-label="Ви знаходитесь тут:" role="navigation">
                 <ul class="breadcrumbs">
                     <li><a href="{{route('welcome')}}">Головна</a></li>
-                    <li><span>Магазини</span></li>
+                    <li><span>Контакти</span></li>
                 </ul>
             </nav>
-            <h1 class="contacts">Магазини</h1>
+            <h1 class="contacts">Контакти</h1>
             <div class="contacts-block">
                 <div class="contacts-block-left">
                     <div class="contacts-block-map">
