@@ -37,6 +37,7 @@ Route::group([
 });
 Route::get('/', 'WelcomeController@index')->name('welcome');
 Route::get('/about', 'AboutController@index')->name('about');
+Route::get('/feedback', 'FeedbackController@index')->name('feedback');
 Route::get('/contacts', 'ContactsController@index')->name('contacts');
 Route::get('/to_customers', 'ToCustomersController@index')->name('toCustomers');
 Route::get('/catalog', 'CatalogController@index')->name('catalog');
@@ -48,6 +49,7 @@ Route::get('/basket/place', 'BasketController@basketPlace')->name('basket-place'
 Route::post('/basket/add/{id}', 'BasketController@add')->name('basket-add');
 Route::post('/basket/remove/{id}', 'BasketController@remove')->name('basket-remove');
 Route::post('/basket/place', 'BasketController@basketConfirm')->name('basket-confirm');
+Route::post('/feedback', 'FeedbackController@add')->name('feedback-add');
 
 Route::get('/product/{id}', 'ProductsController@index')->name('product');
 Route::get('/category/{id}', 'CategoryController@index')->name('category');

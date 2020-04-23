@@ -3713,7 +3713,7 @@ h2, .like-h2, .about-list-item-name {
   width: 100%;
   height: 100%; }
 .site-btn-green-gradient > span.white-arrow {
-  background-image: url("/img/arrow-right-white.png"); }
+  background-image: url("/image/arrow-right-white.png"); }
 .site-btn-green-gradient:hover {
   background-image: linear-gradient(to right, #109545 0%, #7cbc40 100%); }
 @media screen and (max-width: 64em) {
@@ -7966,8 +7966,8 @@ h2, .like-h2, .about-list-item-name {
   padding-right: 25px; }
 
 .about-list, .services-list {
-  border-top: 1px solid #f1f1f1;
-  border-left: 1px solid #f1f1f1;
+  border: 1px solid #f1f1f1;
+  /*border-left: 1px solid #f1f1f1;*/
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;

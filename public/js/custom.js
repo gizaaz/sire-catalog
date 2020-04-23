@@ -79,3 +79,4 @@ $(".fancy-color").fancybox({
 	'opacity': true
 });
 });
+
