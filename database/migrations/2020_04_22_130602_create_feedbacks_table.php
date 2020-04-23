@@ -19,6 +19,7 @@ class CreateFeedbacksTable extends Migration
             $table->string('email')->nullable();
             $table->integer('rating')->nullable();
             $table->text('description')->nullable();
+            $table->integer('status')->nullable();
             $table->timestamps();
         });
     }

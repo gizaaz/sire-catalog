@@ -11,27 +11,33 @@
             </nav>
             <h1>Відгуки</h1>
             <div class="centered-block">
-                <div class="about-list">
 
+                @if(session()->has('success'))
+                    <div class="success">
+                        {{session()->get('success')}}
+                    </div>
+                @endif
+
+                <div class="about-list">
                     @foreach($feedbacks as $feedback)
-                    <div class="feedback">
-                        <div class="feedback-info">
-                            <img src="image/no-avatar.png">
-                            <div class="feedback-name">{{$feedback->name}}</div>
-                            <div class="feedback-date">{{$feedback->created_at->format('d.m.Y')}}</div>
-                            <div class="feedback-rating">
-                                @for($i = 0; $i < $feedback->rating; $i++)
-                                <span class="rating-green">★</span>
-                                @endfor
-                                @for($i = 5; $i > $feedback->rating; $i--)
-                                <span class="icon">★</span>
-                                @endfor
+                        <div class="feedback">
+                            <div class="feedback-info">
+                                <img src="image/no-avatar.png">
+                                <div class="feedback-name">{{$feedback->name}}</div>
+                                <div class="feedback-date">{{$feedback->created_at->format('d.m.Y')}}</div>
+                                <div class="feedback-rating">
+                                    @for($i = 0; $i < $feedback->rating; $i++)
+                                        <span class="rating-gold">★</span>
+                                    @endfor
+                                    @for($i = 5; $i > $feedback->rating; $i--)
+                                        <span class="icon">★</span>
+                                    @endfor
+                                </div>
+                            </div>
+                            <div class="feedback-description"><p>{{$feedback->description}}</p>
+
                             </div>
                         </div>
-                        <div class="feedback-description"><p>{{$feedback->description}}</p>
-
-                        </div>
-                    </div>
                     @endforeach
                 </div>
                 <div class="connect-form-block">

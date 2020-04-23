@@ -750,14 +750,27 @@ h3.box-heading {
 
 .rating:not(:hover) label input:checked ~ .icon,
 .rating:hover label:hover input ~ .icon {
-    color: #228B22;
+    color: #FFD700;
 }
 
 .rating label input:focus:not(:checked) ~ .icon:last-child {
     color: #000;
-    text-shadow: 0 0 5px #228B22;
+    text-shadow: 0 0 5px #FFD700;
 }
 
-.rating-green{
-    color: #228B22;
+.rating-gold{
+    color: #FFD700;
+}
+
+.success {
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
+.alert{
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    text-align: center;
 }
