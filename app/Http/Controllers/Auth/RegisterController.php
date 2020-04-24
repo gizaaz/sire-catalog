@@ -25,7 +25,7 @@ class RegisterController extends Controller
     use RegistersUsers;
 
     protected function redirectTo(){
-        return route('welcome');
+        return route('login');
     }
     /**
      * Create a new controller instance.

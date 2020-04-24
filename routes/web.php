@@ -27,8 +27,11 @@ Route::group([
     'prefix' => 'admin',
 ], function(){
     Route::get('/orders', 'OrderController@index')->name('home');
+    Route::get('/feedbacks', 'FeedbackController@index')->name('feedbacks.index');
     Route::get('/orders/{order}', 'OrderController@show')->name('orders.show');
     Route::match(['put', 'patch'],'/orders/{order}', 'OrderController@update')->name('orders.update');
+    Route::match(['put', 'patch'],'/feedbacks/{feedback}', 'FeedbackController@update')->name('feedbacks.update');
+    Route::delete('/feedbacks/{feedback}', 'FeedbackController@destroy')->name('feedbacks.destroy');
     Route::resource('categories', 'CategoryController');
     Route::resource('categories/child', 'ChildCategoryController');
     Route::resource('products', 'ProductController');
@@ -37,6 +40,7 @@ Route::group([
 });
 Route::get('/', 'WelcomeController@index')->name('welcome');
 Route::get('/about', 'AboutController@index')->name('about');
+Route::get('/feedbacks', 'FeedbackController@index')->name('feedback');
 Route::get('/contacts', 'ContactsController@index')->name('contacts');
 Route::get('/to_customers', 'ToCustomersController@index')->name('toCustomers');
 Route::get('/catalog', 'CatalogController@index')->name('catalog');
@@ -48,6 +52,7 @@ Route::get('/basket/place', 'BasketController@basketPlace')->name('basket-place'
 Route::post('/basket/add/{id}', 'BasketController@add')->name('basket-add');
 Route::post('/basket/remove/{id}', 'BasketController@remove')->name('basket-remove');
 Route::post('/basket/place', 'BasketController@basketConfirm')->name('basket-confirm');
+Route::post('/feedbacks', 'FeedbackController@add')->name('feedback-add');
 
 Route::get('/product/{id}', 'ProductsController@index')->name('product');
 Route::get('/category/{id}', 'CategoryController@index')->name('category');

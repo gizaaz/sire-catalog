@@ -142,6 +142,7 @@
                             </ul>
                         </li>
                         <li><a href="{{route('contacts')}}">Контакти</a></li>
+                        <li><a href="{{route('feedback')}}">Відгуки</a></li>
 
                     </ul>
                 </nav>
@@ -201,6 +202,7 @@
                                 </ul>
                             </li>
                             <li><a href="{{route('contacts')}}">Контакти</a></li>
+                            <li><a href="{{route('feedback')}}">Відгуки</a></li>
                         </ul>
                     </nav>
                 </div>
