@@ -64,9 +64,9 @@
                     <br>
                     <div class="col-sm-10">
                         @isset($child_category)
-                            <input type="file" name="images" id="image">Виберіть зображення
+                            <input type="file" name="images" id="image">
                         @else
-                            <input type="file" required name="images" id="image">Виберіть зображення
+                            <input type="file" required name="images" id="image">
                         @endisset
                     </div>
                 </div>
