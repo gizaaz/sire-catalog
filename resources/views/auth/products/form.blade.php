@@ -85,6 +85,7 @@
                 <br>
                 <div class="input-group row">
                     <label for="image" class="col-sm-2 col-form-label">Зображення:<br>
+                        (Виберіть одне або декілька зображень)
                         @isset($images)
                             (Нажміть на зображення щоб видалити його)
                         @endisset
@@ -97,10 +98,9 @@
                             @endforeach
                         @endisset
                         @isset($product)
-                            <input type="file" multiple name="images[]" id="image">Виберіть одне або декілька зображень
+                            <input type="file" multiple name="images[]" id="image">
                         @else
-                            <input type="file" multiple required name="images[]" id="image">Виберіть одне або декілька
-                            зображень
+                            <input type="file" multiple required name="images[]" id="image">
                         @endisset
                     </div>
                 </div>
