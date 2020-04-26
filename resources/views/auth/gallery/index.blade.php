@@ -41,4 +41,5 @@
             </tbody>
         </table>
     </div>
+    {{$galleries->links('pagination')}}
 @endsection
