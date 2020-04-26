@@ -774,3 +774,14 @@ h3.box-heading {
     color: white;
     text-align: center;
 }
+
+.gallery-block h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.border-gallery{
+    border-top:  2px solid #ebebeb;
+
+}

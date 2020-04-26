@@ -28,6 +28,7 @@ Route::group([
 ], function(){
     Route::get('/orders', 'OrderController@index')->name('home');
     Route::get('/feedbacks', 'FeedbackController@index')->name('feedbacks.index');
+//    Route::get('/gallery', 'GalleryController@index')->name('gallery.index');
     Route::get('/orders/{order}', 'OrderController@show')->name('orders.show');
     Route::match(['put', 'patch'],'/orders/{order}', 'OrderController@update')->name('orders.update');
     Route::match(['put', 'patch'],'/feedbacks/{feedback}', 'FeedbackController@update')->name('feedbacks.update');
@@ -41,6 +42,7 @@ Route::group([
 Route::get('/', 'WelcomeController@index')->name('welcome');
 Route::get('/about', 'AboutController@index')->name('about');
 Route::get('/feedbacks', 'FeedbackController@index')->name('feedback');
+Route::get('/gallery', 'GalleryController@index')->name('gallery');
 Route::get('/contacts', 'ContactsController@index')->name('contacts');
 Route::get('/to_customers', 'ToCustomersController@index')->name('toCustomers');
 Route::get('/catalog', 'CatalogController@index')->name('catalog');
