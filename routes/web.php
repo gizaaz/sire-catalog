@@ -37,6 +37,7 @@ Route::group([
     Route::resource('products', 'ProductController');
     Route::resource('gallery', 'GalleryController');
     Route::post('product/image/delete','ProductController@deleteImage');
+    Route::post('gallery/image/delete','GalleryController@deleteImage');
 
 });
 Route::get('/', 'WelcomeController@index')->name('welcome');

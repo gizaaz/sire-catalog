@@ -57,7 +57,7 @@
                     <div class="col-sm-10">
                         @isset($images)
                             @foreach($images as $image)
-                                <td><img class="remove_img close_img" src="{{Storage::url($image['image'])}}"
+                                <td><img class="gallery_remove_img close_img" src="{{Storage::url($image['image'])}}"
                                          height="140px" data-id="{{$image['id']}}"></td>
                             @endforeach
                         @endisset
