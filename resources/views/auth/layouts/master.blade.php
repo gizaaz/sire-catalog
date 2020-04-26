@@ -49,6 +49,7 @@
                         <li><a href="{{route('products.index')}}">Товари</a></li>
                         <li><a href="{{route('home')}}">Замовлення</a></li>
                         <li><a href="{{route('feedbacks.index')}}">Відгуки</a></li>
+                        <li><a href="{{route('gallery.index')}}">Галерея</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="nav-item dropdown">

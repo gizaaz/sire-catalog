@@ -28,7 +28,6 @@ Route::group([
 ], function(){
     Route::get('/orders', 'OrderController@index')->name('home');
     Route::get('/feedbacks', 'FeedbackController@index')->name('feedbacks.index');
-//    Route::get('/gallery', 'GalleryController@index')->name('gallery.index');
     Route::get('/orders/{order}', 'OrderController@show')->name('orders.show');
     Route::match(['put', 'patch'],'/orders/{order}', 'OrderController@update')->name('orders.update');
     Route::match(['put', 'patch'],'/feedbacks/{feedback}', 'FeedbackController@update')->name('feedbacks.update');
@@ -36,6 +35,7 @@ Route::group([
     Route::resource('categories', 'CategoryController');
     Route::resource('categories/child', 'ChildCategoryController');
     Route::resource('products', 'ProductController');
+    Route::resource('gallery', 'GalleryController');
     Route::post('product/image/delete','ProductController@deleteImage');
 
 });

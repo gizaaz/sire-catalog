@@ -1,11 +1,11 @@
 @extends('auth.layouts.master')
 
-@section('title', 'Продукт ' . $product->name)
+@section('title', 'Продукт ' . $gallery->name)
 
 @section('content')
     <div class="col-md-12">
-        <h1>{{ $product->name }}</h1>
-        <table class="table">
+        <h1>{{ $gallery->name }}</h1>
+        <table class="table table-striped">
             <tbody>
             <tr>
                 <th>
@@ -17,29 +17,15 @@
             </tr>
             <tr>
                 <td>ID</td>
-                <td>{{ $product->id}}</td>
+                <td>{{ $gallery->id}}</td>
             </tr>
             <tr>
                 <td>Назва товару</td>
-                <td>{{ $product->name }}</td>
-            </tr>
-            <tr>
-                <td>Категорія</td>
-                <td>
-                    @if(isset($product->category->name))
-                        {{$product->category->name}}
-                    @else
-                        <span style="color: red; font-weight: bold;"> КАТЕГОРІЮ НЕ ЗНАЙДЕНО</span>
-                    @endif
-                </td>
-            </tr>
-            <tr>
-                <td>Ціна</td>
-                <td>{{ $product->price }}</td>
+                <td>{{ $gallery->name }}</td>
             </tr>
             <tr>
                 <td>Опис</td>
-                <td>{!! $product->description !!}</td>
+                <td>{!! $gallery->description !!}</td>
             </tr>
             <tr>
             <td>Зображення</td>

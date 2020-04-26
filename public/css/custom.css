@@ -775,13 +775,36 @@ h3.box-heading {
     text-align: center;
 }
 
-.gallery-block h1{
+.gallery-title{
     text-align: center;
-    margin-top: 20px;
+    margin: 0 auto;
 }
 
+.gallery-block{
+    background-color: white;
+    border-top:  1px solid #ebebeb;
+    border-left:  1px solid #ebebeb;
+    border-right:  1px solid #ebebeb;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
 
-.border-gallery{
-    border-top:  2px solid #ebebeb;
+.gallery-comment{
+    width:95%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+    margin-bottom: 0;
+}
 
+.gallery-image{
+    text-align:  center;
+}
+
+.fotorama__wrap {
+    margin: 0 auto;
+}
+.fotorama img{
+    height: 300px;
 }
