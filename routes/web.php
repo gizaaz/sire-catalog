@@ -30,9 +30,11 @@ Route::group([
     Route::get('/orders/{order}', 'OrderController@show')->name('orders.show');
     Route::match(['put', 'patch'],'/orders/{order}', 'OrderController@update')->name('orders.update');
     Route::resource('categories', 'CategoryController');
+    Route::resource('services', 'ServiceController');
     Route::resource('categories/child', 'ChildCategoryController');
     Route::resource('products', 'ProductController');
     Route::post('product/image/delete','ProductController@deleteImage');
+    Route::post('service/image/delete','ServiceController@deleteIcon');
 
 });
 Route::get('/', 'WelcomeController@index')->name('welcome');
@@ -43,6 +45,7 @@ Route::get('/catalog', 'CatalogController@index')->name('catalog');
 Route::get('/to_partner', 'ParthnerController@index')->name('partner');
 Route::get('/sales', 'SalesController@index')->name('sales');
 Route::get('/services', 'ServicesController@index')->name('services');
+Route::get('/services/{id}', 'ServicesController@service')->name('service');
 Route::get('/basket', 'BasketController@index')->name('basket');
 Route::get('/basket/place', 'BasketController@basketPlace')->name('basket-place');
 Route::post('/basket/add/{id}', 'BasketController@add')->name('basket-add');
