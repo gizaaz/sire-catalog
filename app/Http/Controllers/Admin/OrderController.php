@@ -26,9 +26,17 @@ class OrderController extends Controller
     public function index()
     {
         $orders = Order::where('status', 1)->orderBy('updated_at', 'desc')->paginate(40);
+        return view('auth.orders.index', compact('orders'));
+    }
+
+    public function processed(){
         $orders_process = Order::where('status', 2)->orderBy('updated_at', 'desc')->paginate(40);
+        return view('auth.orders.processed', compact('orders_process'));
+    }
+
+    public function offline(){
         $orders_offline = Order::where('status', 3)->orderBy('updated_at', 'desc')->paginate(40);
-        return view('auth.orders.index', compact('orders', 'orders_offline', 'orders_process'));
+        return view('auth.orders.offline', compact('orders_offline'));
     }
 
     public function show(Order $order)
@@ -40,6 +48,7 @@ class OrderController extends Controller
     {
         $order->status = $request->get('status');
         $order->update();
-        return redirect()->route('home');
+        return redirect()->back();
+//        return redirect()->route('home');
     }
 }

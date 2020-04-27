@@ -12,6 +12,19 @@
                     <p>Номер телефону: <b>{{ $order->phone }}</b></p>
                     <p>E-mail: <b>{{ $order->email }}</b></p>
                     <p>Повідомлення: <b>{{ $order->description }}</b></p>
+                    <p>Статус замовлення: <b>
+                            @switch($order->status)
+                                @case(1)
+                                <span class="badge status-new">Нове</span>
+                                @break
+                                @case(2)
+                                <span class="badge status-process">Обробляється</span>
+                                @break
+                                @case(3)
+                                <span class="badge status-offline">Виконано</span>
+                                @break
+                            @endswitch
+                        </b></p>
                     <table class="table table-striped">
                         <thead>
                         <tr>

@@ -26,8 +26,11 @@ Route::group([
     'namespace' => 'Admin',
     'prefix' => 'admin',
 ], function(){
-    Route::get('/orders/new', 'OrderController@index')->name('home');
-    Route::get('/feedbacks', 'FeedbackController@index')->name('feedbacks.index');
+    Route::get('/orders/new', 'OrderController@index')->name('orders.index');
+    Route::get('/orders/processed', 'OrderController@processed')->name('orders.processed');
+    Route::get('/orders/offline', 'OrderController@offline')->name('orders.offline');
+    Route::get('/feedbacks/new', 'FeedbackController@index')->name('feedbacks.index');
+    Route::get('/feedbacks/published', 'FeedbackController@published')->name('feedbacks.published');
     Route::get('/orders/{order}', 'OrderController@show')->name('orders.show');
     Route::match(['put', 'patch'],'/orders/{order}', 'OrderController@update')->name('orders.update');
     Route::match(['put', 'patch'],'/feedbacks/{feedback}', 'FeedbackController@update')->name('feedbacks.update');

@@ -11,7 +11,7 @@ class FeedbackController extends Controller
     public function index()
     {
         $category = Category::where('category_id', null)->get();
-        $feedbacks = Feedback::where('status', 1)->orderBy('updated_at', 'desc')->get();
+        $feedbacks = Feedback::where('status', 1)->orderBy('created_at', 'desc')->paginate(20);
         return view('feedback', compact('category','feedbacks'));
     }
 
