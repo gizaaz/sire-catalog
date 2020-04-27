@@ -37,6 +37,7 @@
     <meta property="og:image" content="{{asset('img/logo.png')}}"/>
     <meta property="og:type" content="article"/>
 
+
     <link rel="stylesheet" href="{{asset('css/screen.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
@@ -57,6 +58,10 @@
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
+
+    <!--for only gallery -->
+        <link rel="stylesheet" href="{{asset('css/fotorama.css')}}">
+        <script src="{{asset('js/fotorama.js')}}" type="text/javascript"></script>
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -142,6 +147,8 @@
                             </ul>
                         </li>
                         <li><a href="{{route('contacts')}}">Контакти</a></li>
+                        <li><a href="{{route('gallery')}}">Наші роботи</a></li>
+                        <li><a href="{{route('feedback')}}">Відгуки</a></li>
 
                     </ul>
                 </nav>
@@ -201,6 +208,8 @@
                                 </ul>
                             </li>
                             <li><a href="{{route('contacts')}}">Контакти</a></li>
+                            <li><a href="{{route('gallery')}}">Наші роботи</a></li>
+                            <li><a href="{{route('feedback')}}">Відгуки</a></li>
                         </ul>
                     </nav>
                 </div>

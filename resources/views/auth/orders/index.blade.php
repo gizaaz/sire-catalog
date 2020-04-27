@@ -48,9 +48,9 @@
                                 Присвоїти статус
                             </th>
                         </tr>
-                        @foreach($orders as $order)
+                        @foreach($orders as $item=>$order)
                             <tr>
-                                <td>{{ $order->id}}</td>
+                                <td>{{ ++$item}}</td>
                                 <td>{{ $order->user_name}}</td>
                                 <td>{{ $order->phone}}</td>
                                 <td>{{ $order->email}}</td>
@@ -119,9 +119,9 @@
                                 Присвоїти статус
                             </th>
                         </tr>
-                        @foreach($orders_process as $process)
+                        @foreach($orders_process as $item=>$process)
                             <tr>
-                                <td>{{ $process->id}}</td>
+                                <td>{{ ++$item}}</td>
                                 <td>{{ $process->user_name}}</td>
                                 <td>{{ $process->phone}}</td>
                                 <td>{{ $process->email}}</td>

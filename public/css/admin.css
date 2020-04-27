@@ -1,0 +1,13 @@
+.star{
+     font-size: 17px;
+ }
+.gold-star{
+    color: #FFD700;
+}
+.rating-field{
+    width: 120px;
+}
+
+.button-download{
+    margin-top: 10px;
+}

@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link href="/css/fix.css" rel="stylesheet">
+    <link href="/css/admin.css" rel="stylesheet">
     <link href="/css/app2.css" rel="stylesheet">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -33,16 +34,6 @@
             <a class="navbar-brand" href="{{ route('welcome') }}">
                 Повернутись на сайт
             </a>
-
-            {{--<div id="navbar" class="collapse navbar-collapse">--}}
-                {{--<ul class="nav navbar-nav">--}}
-                    {{--<li><a--}}
-                            {{--href="http://laravel-diplom-1.rdavydov.ru/admin/categories">Категорії</a></li>--}}
-                    {{--<li><a href="http://laravel-diplom-1.rdavydov.ru/admin/products">Товари</a>--}}
-                    {{--</li>--}}
-                    {{--<li><a href="http://laravel-diplom-1.rdavydov.ru/admin/orders">Замовлення</a></li>--}}
-                {{--</ul>--}}
-
                 @guest
                     <ul class="nav navbar-nav navbar-right">
                         <li class="nav-item">
@@ -58,10 +49,11 @@
                     <ul class="nav navbar-nav">
                         <li><a
                                 href="{{route('categories.index')}}">Категорії</a></li>
-                        <li><a href="{{route('products.index')}}">Товари</a>
-                        </li>
+                        <li><a href="{{route('products.index')}}">Товари</a></li>
                         <li><a href="{{route('home')}}">Замовлення</a></li>
                         <li><a href="{{route('services.index')}}">Послуги</a></li>
+                        <li><a href="{{route('feedbacks.index')}}">Відгуки</a></li>
+                        <li><a href="{{route('gallery.index')}}">Галерея</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="nav-item dropdown">
