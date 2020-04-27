@@ -24,54 +24,18 @@
                     </div>
                     <a href="" class="card-options-result-cart-btn site-btn site-btn-green-gradient">Подробнее</a>
                 </div>
+                @foreach($services as $service)
                 <div class="about-list-item">
-                    <div class="about-list-item-img"><a href="https://www.estet-doors.ru/uslugi/dostavka/"><img src="https://www.estet-doors.ru/image/cache/catalog/other/service_icon/serv1-54x47.png" alt="Доставка"></a></div><a class="about-list-item-name" href="https://www.estet-doors.ru/uslugi/dostavka/">Доставка</a>
-                    <div class="about-list-item-desc">Компания ESTET предлагает услуги по доставке заказа по нужному адресу и в удобное для Вас время, соблюдая все правила транспортировки и подъема дверей до квартиры</div>
+                    <div class="about-list-item-img"><a href="{{route('service', ['id'=> $service->id])}}"><img src="https://www.estet-doors.ru/image/cache/catalog/other/service_icon/serv1-54x47.png" alt="{{$service->name}}"></a></div><a class="about-list-item-name" href="{{route('service', ['id'=> $service->id])}}">{{$service->name}}</a>
+                    <div class="about-list-item-desc">{{$service->summary}}</div>
                     <div class="about-list-item-bottom">
                         <div class="about-list-item-price"><span>Стоимость</span>
-                            <div class="site-price"><span>от</span><span class="price-val">1 700</span><span class="price-currency">руб.</span></div>
+                            <div class="site-price"><span>від</span><span class="price-val">{{$service->price}}</span><span class="price-currency">грн.</span></div>
                         </div>
-
-
                     </div>
                     <a href="" class="card-options-result-cart-btn site-btn site-btn-green-gradient" data-fancybox>Заказать</a>
                 </div>
-                <div class="about-list-item">
-                    <div class="about-list-item-img"><a href="https://www.estet-doors.ru/uslugi/vyzov-menedzhera-na-dom/"><img src="https://www.estet-doors.ru/image/cache/catalog/other/service_icon/serv3-54x47.png" alt="Вызов менеджера на дом"></a></div><a class="about-list-item-name" href="https://www.estet-doors.ru/uslugi/vyzov-menedzhera-na-dom/">Вызов менеджера на дом</a>
-                    <div class="about-list-item-desc">Компания ESTET предлагает своим Покупателем услуги выездного менеджера. Получить подробную консультацию, подобрать нужное по цвету покрытие и оформить заказ, теперь возможно не выходя из дома!</div>
-                    <div class="about-list-item-bottom">
-                        <div class="about-list-item-price"><span>Стоимость</span>
-                            <div class="site-price"><span>от</span><span class="price-val">1 000</span><span class="price-currency">руб.</span></div>
-                        </div>
-
-
-                    </div>
-                    <a href="" class="card-options-result-cart-btn site-btn site-btn-green-gradient" data-fancybox>Заказать</a>
-                </div>
-                <div class="about-list-item">
-                    <div class="about-list-item-img"><a href="https://www.estet-doors.ru/uslugi/vyzov-zamerschika/"><img src="https://www.estet-doors.ru/image/cache/catalog/other/service_icon/serv2-54x47.png" alt="Вызов замерщика"></a></div><a class="about-list-item-name" href="https://www.estet-doors.ru/uslugi/vyzov-zamerschika/">Вызов замерщика</a>
-                    <div class="about-list-item-desc">Компания ESTET предлагает услугу вызова замерщика на дом даже в том случае, когда у Вас нет сомнений на счет размеров проемов. </div>
-                    <div class="about-list-item-bottom">
-                        <div class="about-list-item-price"><span>Стоимость</span>
-                            <div class="site-price"><span>от</span><span class="price-val">500</span><span class="price-currency">руб.</span></div>
-                        </div>
-
-
-                    </div>
-                    <a href="" class="card-options-result-cart-btn site-btn site-btn-green-gradient" data-fancybox>Заказать</a>
-                </div>
-                <div class="about-list-item">
-                    <div class="about-list-item-img"><a href="https://www.estet-doors.ru/uslugi/ustanovka-dverej/"><img src="https://www.estet-doors.ru/image/cache/catalog/other/service_icon/serv4-54x47.png" alt="Установка"></a></div><a class="about-list-item-name" href="https://www.estet-doors.ru/uslugi/ustanovka-dverej/">Установка</a>
-                    <div class="about-list-item-desc">Компания ESTET предоставляет услуги по профессиональному монтажу межкомнатных дверей. На установку действует дополнительная гарантия сроком 1 год.</div>
-                    <div class="about-list-item-bottom">
-                        <div class="about-list-item-price"><span>Стоимость</span>
-                            <div class="site-price"><span>от</span><span class="price-val">2 950</span><span class="price-currency">руб.</span></div>
-                        </div>
-
-
-                    </div>
-                    <a href="" class="card-options-result-cart-btn site-btn site-btn-green-gradient" data-fancybox>Заказать</a>
-                </div>
+                @endforeach
             </div>
             <div class="connect-form-block">
                 <div class="connect-form-header">Связаться с нами</div>

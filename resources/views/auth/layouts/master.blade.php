@@ -19,6 +19,9 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
+    <link rel="stylesheet" href="{{asset('css/screen.css')}}">
+    <link rel="stylesheet" href="{{asset('css/custom.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link href="/css/fix.css" rel="stylesheet">
     <link href="/css/admin.css" rel="stylesheet">
     <link href="/css/app2.css" rel="stylesheet">
@@ -48,6 +51,7 @@
                                 href="{{route('categories.index')}}">Категорії</a></li>
                         <li><a href="{{route('products.index')}}">Товари</a></li>
                         <li><a href="{{route('home')}}">Замовлення</a></li>
+                        <li><a href="{{route('services.index')}}">Послуги</a></li>
                         <li><a href="{{route('feedbacks.index')}}">Відгуки</a></li>
                         <li><a href="{{route('gallery.index')}}">Галерея</a></li>
                     </ul>

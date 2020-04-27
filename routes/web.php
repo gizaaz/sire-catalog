@@ -33,12 +33,13 @@ Route::group([
     Route::match(['put', 'patch'],'/feedbacks/{feedback}', 'FeedbackController@update')->name('feedbacks.update');
     Route::delete('/feedbacks/{feedback}', 'FeedbackController@destroy')->name('feedbacks.destroy');
     Route::resource('categories', 'CategoryController');
+    Route::resource('services', 'ServiceController');
     Route::resource('categories/child', 'ChildCategoryController');
     Route::resource('products', 'ProductController');
     Route::resource('gallery', 'GalleryController');
     Route::post('product/image/delete','ProductController@deleteImage');
+    Route::post('service/image/delete','ServiceController@deleteIcon');
     Route::post('gallery/image/delete','GalleryController@deleteImage');
-
 });
 Route::get('/', 'WelcomeController@index')->name('welcome');
 Route::get('/about', 'AboutController@index')->name('about');
@@ -50,6 +51,7 @@ Route::get('/catalog', 'CatalogController@index')->name('catalog');
 Route::get('/to_partner', 'ParthnerController@index')->name('partner');
 Route::get('/sales', 'SalesController@index')->name('sales');
 Route::get('/services', 'ServicesController@index')->name('services');
+Route::get('/services/{id}', 'ServicesController@service')->name('service');
 Route::get('/basket', 'BasketController@index')->name('basket');
 Route::get('/basket/place', 'BasketController@basketPlace')->name('basket-place');
 Route::post('/basket/add/{id}', 'BasketController@add')->name('basket-add');
