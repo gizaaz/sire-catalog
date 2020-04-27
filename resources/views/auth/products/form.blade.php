@@ -98,9 +98,9 @@
                             @endforeach
                         @endisset
                         @isset($product)
-                            <input type="file" multiple name="images[]" id="image">
+                            <input class="button-download" type="file" multiple name="images[]" id="image">
                         @else
-                            <input type="file" multiple required name="images[]" id="image">
+                            <input class="button-download" type="file" multiple required name="images[]" id="image">
                         @endisset
                     </div>
                 </div>

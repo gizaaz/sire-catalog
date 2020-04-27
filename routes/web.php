@@ -35,12 +35,15 @@ Route::group([
     Route::resource('categories', 'CategoryController');
     Route::resource('categories/child', 'ChildCategoryController');
     Route::resource('products', 'ProductController');
+    Route::resource('gallery', 'GalleryController');
     Route::post('product/image/delete','ProductController@deleteImage');
+    Route::post('gallery/image/delete','GalleryController@deleteImage');
 
 });
 Route::get('/', 'WelcomeController@index')->name('welcome');
 Route::get('/about', 'AboutController@index')->name('about');
 Route::get('/feedbacks', 'FeedbackController@index')->name('feedback');
+Route::get('/gallery', 'GalleryController@index')->name('gallery');
 Route::get('/contacts', 'ContactsController@index')->name('contacts');
 Route::get('/to_customers', 'ToCustomersController@index')->name('toCustomers');
 Route::get('/catalog', 'CatalogController@index')->name('catalog');
