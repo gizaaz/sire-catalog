@@ -79,7 +79,6 @@
                     </ul>
                 @endauth
             </div>
-        </div>
     </nav>
 
     <div class="py-4">

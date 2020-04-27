@@ -25,8 +25,7 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::paginate(40);
-        $child_categories = Category::whereNotNull('category_id')->paginate(40);
-        return view('auth.categories.index', compact('categories','child_categories'));
+        return view('auth.categories.index', compact('categories'));
     }
 
     /**

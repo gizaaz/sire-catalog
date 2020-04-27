@@ -7,15 +7,12 @@
     <div id="exTab" class="container">
         <ul class="nav nav-pills">
             <li class="active">
-                <a href="#1b" data-toggle="tab">Категорії</a>
+                <a href="#">Категорії</a>
             </li>
-            <li><a href="#2b" data-toggle="tab">Підкатегорії</a>
+            <li><a href="{{route('child.index')}}">Підкатегорії</a>
             </li>
         </ul>
-
-
-        <div class="tab-content clearfix">
-            <div class="tab-pane active" id="1b">
+        {{--<div class="tab-content clearfix">--}}
                 <div class="col-md-12">
                     <h1>Категорії</h1>
                     <a class="btn btn-success custom-fix" type="button" href="{{ route('categories.create') }}">Створити
@@ -56,49 +53,7 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
-
-            <div class="tab-pane" id="2b">
-                <div class="col-md-12">
-                    <h1>Підкатегорії</h1>
-                    <a class="btn btn-success custom-fix" type="button" href="{{ route('child.create') }}">Створити
-                    підкатегорію</a>
-                    <table class="table table-striped">
-                        <tbody>
-                        <tr>
-                            <th>
-                                #
-                            </th>
-                            <th>
-                                Назва підкатегорії
-                            </th>
-                            <th>
-                                Дії
-                            </th>
-                        </tr>
-                        @foreach($child_categories as $item=>$child)
-                                <tr>
-                                    <td>{{ ++$item }}</td>
-                                    <td>{{ $child->name }}</td>
-                                    <td>
-                                        <div class="btn-group" role="group">
-                                            <form action="{{ route('child.destroy', $child) }}" method="POST">
-                                                <a class="btn btn-success" type="button"
-                                                   href="{{ route('child.show', $child) }}">Відкрити</a>
-                                                <a class="btn btn-warning" type="button"
-                                                   href="{{ route('child.edit', $child) }}">Редагувати</a>
-                                                @csrf
-                                                @method('DELETE')
-                                                <button class="btn btn-danger" type="submit" value="Видалити" onclick="return destroy();">Видалити</button>
-                                            </form>
-                                        </div>
-                                    </td>
-                                </tr>
-                        @endforeach
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+        {{--</div>--}}
     </div>
+    {{$categories->links('pagination')}}
 @endsection
