@@ -19,7 +19,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::get();
+        $products = Product::paginate(40);
         return view('auth.products.index', compact('products'));
     }
 
@@ -131,6 +131,11 @@ class ProductController extends Controller
     public function destroy(Product $product)
     {
         $product->delete();
+        $images = Image::where('product_id', $product->id)->get();
+        foreach ($images as $image) {
+            Storage::delete($image->image);
+            $image->delete();
+        }
         return redirect()->route('products.index');
     }
 }

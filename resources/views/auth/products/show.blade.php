@@ -43,9 +43,11 @@
             </tr>
             <tr>
             <td>Зображення</td>
+                <td>
             @foreach($images as $image)
-                <td><img src="{{Storage::url($image['image'])}}" height="240px"></td>
+                <img src="{{Storage::url($image['image'])}}" height="240px">
             @endforeach
+                </td>
             </tr>
             </tbody>
         </table>
