@@ -36,8 +36,17 @@ Route::group([
     Route::resource('categories/child', 'ChildCategoryController');
     Route::resource('products', 'ProductController');
     Route::post('product/image/delete','ProductController@deleteImage');
-
 });
+
+Route::post('/basket/add/{id}', 'BasketController@add')->name('basket-add');
+Route::group(['middleware' => 'basket_not_empty'], function(){
+    Route::get('/basket', 'BasketController@index')->name('basket');
+    Route::get('/basket/place', 'BasketController@basketPlace')->name('basket-place');
+
+    Route::post('/basket/remove/{id}', 'BasketController@remove')->name('basket-remove');
+    Route::post('/basket/place', 'BasketController@basketConfirm')->name('basket-confirm');
+});
+
 Route::get('/', 'WelcomeController@index')->name('welcome');
 Route::get('/about', 'AboutController@index')->name('about');
 Route::get('/feedbacks', 'FeedbackController@index')->name('feedback');
@@ -47,11 +56,6 @@ Route::get('/catalog', 'CatalogController@index')->name('catalog');
 Route::get('/to_partner', 'ParthnerController@index')->name('partner');
 Route::get('/sales', 'SalesController@index')->name('sales');
 Route::get('/services', 'ServicesController@index')->name('services');
-Route::get('/basket', 'BasketController@index')->name('basket');
-Route::get('/basket/place', 'BasketController@basketPlace')->name('basket-place');
-Route::post('/basket/add/{id}', 'BasketController@add')->name('basket-add');
-Route::post('/basket/remove/{id}', 'BasketController@remove')->name('basket-remove');
-Route::post('/basket/place', 'BasketController@basketConfirm')->name('basket-confirm');
 Route::post('/feedbacks', 'FeedbackController@add')->name('feedback-add');
 
 Route::get('/product/{id}', 'ProductsController@index')->name('product');
