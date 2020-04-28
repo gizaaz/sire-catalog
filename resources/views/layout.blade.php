@@ -226,6 +226,16 @@
             </div>
         </header>
 
+        @if(session()->has('success'))
+            <div class="success">
+                {{session()->get('success')}}
+            </div>
+        @endif
+        @if(session()->has('warning'))
+            <div class="success">
+                {{session()->get('warning')}}
+            </div>
+        @endif
         @yield('content')
 
         <script defer src="//www.zamanuh.ru/widget.js?id=32"></script>

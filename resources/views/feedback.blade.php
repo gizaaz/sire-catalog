@@ -11,13 +11,6 @@
             </nav>
             <h1>Відгуки</h1>
             <div class="centered-block">
-
-                @if(session()->has('success'))
-                    <div class="success">
-                        {{session()->get('success')}}
-                    </div>
-                @endif
-
                 <div class="about-list">
                     @foreach($feedbacks as $feedback)
                         <div class="feedback">
