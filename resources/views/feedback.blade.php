@@ -82,7 +82,9 @@
                         @csrf
                     </form>
                 </div>
+                    {{$feedbacks->links('pagination')}}
             </div>
         </div>
     </main>
+
 @endsection

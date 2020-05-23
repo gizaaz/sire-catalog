@@ -50,9 +50,9 @@
                         <li><a
                                 href="{{route('categories.index')}}">Категорії</a></li>
                         <li><a href="{{route('products.index')}}">Товари</a></li>
-                        <li><a href="{{route('home')}}">Замовлення</a></li>
+                        <li><a href="{{route('orders.index')}}">Замовлення <span class="count-new">({{$orders_count[0]}})</span></a></li>
                         <li><a href="{{route('services.index')}}">Послуги</a></li>
-                        <li><a href="{{route('feedbacks.index')}}">Відгуки</a></li>
+                        <li><a href="{{route('feedbacks.index')}}">Відгуки <span class="count-new">({{$feedback_count[0]}})</span></a></li>
                         <li><a href="{{route('gallery.index')}}">Галерея</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
@@ -79,7 +79,6 @@
                     </ul>
                 @endauth
             </div>
-        </div>
     </nav>
 
     <div class="py-4">
