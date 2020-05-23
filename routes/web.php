@@ -64,6 +64,7 @@ Route::get('/to_partner', 'ParthnerController@index')->name('partner');
 Route::get('/sales', 'SalesController@index')->name('sales');
 Route::get('/services', 'ServicesController@index')->name('services');
 Route::get('/services/{id}', 'ServicesController@service')->name('service');
+Route::post('/services/add/{id}', 'ServicesController@confirmService')->name('service-confirm');
 Route::post('/feedbacks', 'FeedbackController@add')->name('feedback-add');
 
 Route::get('/product/{id}', 'ProductsController@index')->name('product');

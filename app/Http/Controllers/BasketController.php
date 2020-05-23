@@ -75,7 +75,7 @@ class BasketController extends Controller
         $success = $order->saveOrder($request->user_name, $request->phone, $request->email, $request->description);
 
         if($success){
-            session()->flash('success','Заказ прийнятий на обробку, очікуйте дзвінка від менеджера');
+            session()->flash('success','Замовлення прийняте на обробку, очікуйте дзвінка від менеджера');
         } else {
             session()->flash('warning','Сталась помилка :(');
 

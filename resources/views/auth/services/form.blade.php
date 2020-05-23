@@ -68,7 +68,7 @@
                     </label>
                     <div class="col-sm-10">
                         @isset($service->icon)
-                                <td><img class="remove_img close_img" src="{{Storage::url($service->icon)}}"
+                                <td><img class="remove_img_service close_img" src="{{Storage::url($service->icon)}}"
                                          height="140px" data-id="1"></td>
                         @endisset
                         @isset($service)

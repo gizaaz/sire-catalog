@@ -32,7 +32,7 @@
                                 </div>
                                 <div class="connect-form-bottom">
                                     <div class="personal-data">
-                                        <label class="checkbox personal feedback">
+                                        <label class="checkbox personal">
                                             <input type="checkbox" required checked name="agree"/>
                                             <span class="checkbox__text checkbox_agree">Нажимая на кнопку вы подтверждаете что соглашаетесь с &nbsp;</span>
                                             <a href="https://www.estet-doors.ru/pravila-obrabotki-personalnyh-dannyh/" target="_blank">Правилами обработки персональных данных</a>

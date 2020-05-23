@@ -38,7 +38,7 @@ $("body").on("click", ".gallery_remove_img", function () {
     }
 });
 
-$("body").on("click", ".remove_img", function () {
+$("body").on("click", ".remove_img_service", function () {
     var result = confirm("Видалити зображення?");
     if (result) {
         var id = ($(this).attr("data-id"));
