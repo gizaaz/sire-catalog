@@ -16,7 +16,8 @@ class ChildCategoryController extends Controller
      */
     public function index()
     {
-//        return view('auth.categories.index');
+        $child_categories = Category::whereNotNull('category_id')->paginate(40);
+        return view('auth.child_categories.index', compact('child_categories'));
     }
 
     /**
@@ -27,7 +28,7 @@ class ChildCategoryController extends Controller
     public function create()
     {
         $parent_categories = Category::whereNull('category_id')->get();
-        return view('auth.categories.formchild',compact('parent_categories'));
+        return view('auth.child_categories.formchild',compact('parent_categories'));
     }
 
     /**
@@ -49,7 +50,7 @@ class ChildCategoryController extends Controller
         }
         $category->save();
 //        Category::create($params);
-        return redirect()->route('categories.index');
+        return redirect()->route('child.index');
     }
 
     /**
@@ -61,7 +62,7 @@ class ChildCategoryController extends Controller
     public function show($id)
     {
         $child_category = Category::where('id',$id)->get()->first();
-        return view('auth.categories.showchild', compact( 'child_category'));
+        return view('auth.child_categories.showchild', compact( 'child_category'));
     }
 
     /**
@@ -74,7 +75,7 @@ class ChildCategoryController extends Controller
     {
         $child_category = Category::where('id',$id)->get()->first();
         $parent_categories = Category::whereNull('category_id')->get();
-        return view('auth.categories.formchild', compact('child_category','parent_categories'));
+        return view('auth.child_categories.formchild', compact('child_category','parent_categories'));
     }
 
     /**
@@ -98,7 +99,7 @@ class ChildCategoryController extends Controller
         }
 
         $child_category->update();
-        return redirect()->route('categories.index');
+        return redirect()->route('child.index');
     }
 
     /**
@@ -111,6 +112,6 @@ class ChildCategoryController extends Controller
     {
         $category = Category::where('id',$id);
         $category->delete();
-        return redirect()->route('categories.index');
+        return redirect()->route('child.index');
     }
 }

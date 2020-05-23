@@ -5,11 +5,11 @@
 @section('content')
     <div id="exTab" class="container">
         <ul class="nav nav-pills">
-            <li class="active">
-                <a href="#">Нові замовлення <span class="text-white">({{$orders_count[0]}})</span></a>
-            </li>
             <li>
-                <a href="{{route('orders.processed')}}">В обробці <span class="text-black">({{$orders_count[1]}})</span></a>
+                <a href="{{route('orders.index')}}">Нові замовлення <span class="text-black">({{$orders_count[0]}})</span></a>
+            </li>
+            <li class="active">
+                <a href="#">В обробці <span class="text-white">({{$orders_count[1]}})</span></a>
             </li>
             <li><a href="{{route('orders.offline')}}">Виконані замовлення <span class="text-black">({{$orders_count[2]}})</span></a>
             </li>
@@ -17,7 +17,7 @@
 
         <div class="tab-content clearfix">
             <div class="col-md-12">
-                <h1>Нові замовлення</h1>
+                <h1>Замовлення в обробці</h1>
                 <table class="table table-striped">
                     <tbody>
                     <tr>
@@ -46,31 +46,23 @@
                             Присвоїти статус
                         </th>
                     </tr>
-                    @foreach($orders as $item=>$order)
+                    @foreach($orders_process as $item=>$process)
                         <tr>
                             <td>{{ ++$item}}</td>
-                            <td>{{ $order->user_name}}</td>
-                            <td>{{ $order->phone}}</td>
-                            <td>{{ $order->email}}</td>
-                            <td>{{ $order->created_at->format('H:i d.m.Y')}}</td>
-                            <td>{{ $order->getFullPrice() }} ГРН</td>
+                            <td>{{ $process->user_name}}</td>
+                            <td>{{ $process->phone}}</td>
+                            <td>{{ $process->email}}</td>
+                            <td>{{ $process->created_at->format('H:i d.m.Y')}}</td>
+                            <td>{{ $process->getFullPrice() }} ГРН</td>
                             <td>
                                 <div class="btn-group" role="group">
                                     <a class="btn btn-success" type="button"
-                                       href="{{route('orders.show', $order)}}">Переглянути</a>
+                                       href="{{route('orders.show', $process)}}">Переглянути</a>
                                 </div>
                             </td>
                             <td>
                                 <div class="btn-group" role="group">
-                                    <form action="{{ route('orders.update', $order) }}" method="POST">
-                                        @csrf
-                                        @method('PUT')
-                                        <input type="text" style="display: none;" class="form-control" name="status"
-                                               id="name" value="2">
-                                        <input class="btn btn-warning" type="submit" value="В обробці"></form>
-                                </div>
-                                <div class="btn-group" role="group">
-                                    <form action="{{ route('orders.update', $order) }}" method="POST">
+                                    <form action="{{ route('orders.update', $process) }}" method="POST">
                                         @csrf
                                         @method('PUT')
                                         <input type="text" style="display: none;" class="form-control" name="status"
@@ -83,7 +75,7 @@
                     </tbody>
                 </table>
             </div>
-            {{$orders->links('pagination')}}
+            {{$orders_process->links('pagination')}}
         </div>
     </div>
 @endsection

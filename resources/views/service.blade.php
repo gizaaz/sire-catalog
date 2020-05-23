@@ -14,7 +14,7 @@
                 <div class="centered-block-medium">
                     <div class="services-inner">
                         <div class="services-inner-text site-text">
-                            {{$service->description}}
+                            {!! $service->description !!}
                         </div>
                         <div class="connect-form-block">
                             <div class="connect-form-header">Связаться с нами</div>

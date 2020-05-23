@@ -11,3 +11,28 @@
 .button-download{
     margin-top: 10px;
 }
+
+.status-new{
+    background-color: #20bcd5 !important;
+}
+
+.status-process{
+    background-color: #ffc107 !important;
+}
+
+.status-offline{
+    background-color: #28a744 !important;
+}
+
+.count-new{
+    color: black;
+    font-weight: bold;
+}
+
+.pagination-list li {
+    font-size: 15px !important;
+}
+
+.form-control{
+    text-align: left;
+}
