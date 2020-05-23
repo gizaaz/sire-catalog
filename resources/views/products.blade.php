@@ -6,22 +6,28 @@
             <nav aria-label="Вы находитесь здесь:" role="navigation">
                 <ul class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
                     <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{route('catalog')}}"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
-                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.estet-doors.ru/catalog/"><span itemprop="name">Каталог дверей ESTET</span></a><meta itemprop="position" content="2"></li>
-                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/"><span itemprop="name">Межкомнатные двери</span></a><meta itemprop="position" content="3"></li>
-                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><link itemprop="item" href="https://www.estet-doors.ru/catalog/mezhkomnatnye-dveri/r6-keramik/"><span itemprop="name">Межкомнатная дверь R6 Керамик</span><meta itemprop="position" content="4"></li>
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemprop="item" href=""><span itemprop="name">Каталог дверей ESTET</span></a><meta itemprop="position" content="2"></li>
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemprop="item" href=""><span itemprop="name">Межкомнатные двери</span></a><meta itemprop="position" content="3"></li>
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><link itemprop="item" href=""><span itemprop="name">Межкомнатная дверь R6 Керамик</span><meta itemprop="position" content="4"></li>
                 </ul>
             </nav>
             <h1 itemprop="name" class="bottom_remove">{{$product->name}}</h1>
             <div class="card-info centered-block-medium">
                 <div class="card-slider-wrapper">
-                    <div class="card-slider-for" id="product_images">
-                        <div>
-                            <a class="card-slider-item" href="@if(isset($product->images[0]->image)){{asset('storage/' . $product->images[0]->image)}}@endif" data-fancybox="gallery">
-                                <div class="card-slider-item-zoom"></div>
-                                <img src="@if(isset($product->images[0]->image)){{asset('storage/' . $product->images[0]->image)}}@endif" alt="{{$product->name}}">
-                            </a>
-                        </div>
-                    </div>
+                        <!-- Fotorama -->
+                            <div class="fotorama"
+                                 data-minheight="150"
+                                 data-maxheight="400"
+                                 data-minwidth="100"
+                                 data-maxwidth="200"
+                                 data-nav="thumbs"
+                                 data-arrows="true"
+                                 data-allowfullscreen="true"
+                            >
+                                @foreach($product->images as $image)
+                                    <a href="{{Storage::url($image['image'])}}"></a>
+                                @endforeach
+                            </div>
 {{--                    <div class="card-slider-nav">--}}
 {{--                        <div>--}}
 {{--                            @foreach($product->images as $images)--}}
